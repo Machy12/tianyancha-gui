@@ -1124,12 +1124,16 @@ class ModernTianyanchaGUI:
         """显示配置窗口"""
         config_window = tk.Toplevel(self.root)
         config_window.title("配置设置")
-        config_window.geometry("700x500")
+        config_window.geometry("700x550")
         config_window.transient(self.root)
         config_window.grab_set()
 
+        # 说明
+        tip_text = "获取方法: 1.登录天眼查网站 2.按F12打开开发者工具 3.Network标签页 4.刷新页面 5.点击任意请求 6.复制Request Headers中的cookie值"
+        ttk.Label(config_window, text=tip_text, foreground='#666', wraplength=680).pack(anchor=tk.W, padx=10, pady=(10, 5))
+
         # Cookies配置
-        ttk.Label(config_window, text="Cookies配置:").pack(anchor=tk.W, padx=10, pady=(10, 5))
+        ttk.Label(config_window, text="Cookies配置 (必填，用于获取基本信息):").pack(anchor=tk.W, padx=10, pady=(10, 5))
 
         cookies_frame = ttk.Frame(config_window)
         cookies_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
@@ -1452,6 +1456,13 @@ class ModernTianyanchaGUI:
 
         if not basic_info:
             print("❌ basic_info为空，直接返回")
+            self.basic_tree.insert("", tk.END, values=("❌ 错误", "未能获取基本信息，请检查Cookies配置"))
+            return
+
+        # 检查是否有错误信息
+        if '错误' in basic_info:
+            self.basic_tree.insert("", tk.END, values=("❌ 错误", basic_info['错误']))
+            self.update_status("Cookies已过期，请按F1更新配置", "red")
             return
 
         print(f"✅ basic_info有数据，包含 {len(basic_info)} 个字段")
@@ -1748,6 +1759,11 @@ class TianyanchaAPI:
             print(f"📡 HTTP状态码: {response.status_code}")
 
             if response.status_code == 200:
+                # 检查是否被重定向到登录页面
+                if '请输入公司名称' in response.text or 'login' in response.url or '登录' in response.text[:1000]:
+                    print("❌ Cookies已过期，需要重新登录获取新的Cookies")
+                    return {'错误': 'Cookies已过期，请在配置中更新Cookies'}
+                
                 # 保存HTML文件用于调试
                 html_filename = f"debug_company_{gid}.html"
                 with open(html_filename, 'w', encoding='utf-8') as f:
@@ -1756,6 +1772,12 @@ class TianyanchaAPI:
 
                 soup = BeautifulSoup(response.text, 'html.parser')
                 basic_info = self._extract_basic_info_from_html(soup)
+                
+                # 如果没有提取到任何信息，可能是cookies问题
+                if not basic_info:
+                    print("❌ 未能提取到基本信息，可能Cookies已过期")
+                    return {'错误': 'Cookies可能已过期，请在配置中更新Cookies'}
+                
                 print(f"📊 提取到基本信息字段数量: {len(basic_info)}")
                 for key, value in basic_info.items():
                     print(f"   {key}: {value}")
