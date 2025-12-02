@@ -173,7 +173,8 @@ class ModernTianyanchaGUI:
                        fieldbackground=self.colors['surface'],
                        borderwidth=1,
                        relief='solid',
-                       font=('Microsoft YaHei', 10))
+                       font=('Microsoft YaHei', 10),
+                       rowheight=32)
 
         style.configure('Modern.Treeview.Heading',
                        background=self.colors['primary'],
