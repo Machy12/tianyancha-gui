@@ -1133,6 +1133,8 @@ class ModernTianyanchaGUI:
         self.update_personnel(personnel)
         self.update_financial(financial)
         self.update_investments(investments)
+        # 切换到基本信息标签页
+        self.notebook.select(0)
         self.update_status("查询完成", "green")
 
     def update_basic_info(self, basic_info):
