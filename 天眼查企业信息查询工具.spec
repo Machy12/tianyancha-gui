@@ -5,8 +5,8 @@ a = Analysis(
     ['tianyancha_gui_main.py'],
     pathex=[],
     binaries=[],
-    datas=[('tianyancha_treeview.py', '.')],
-    hiddenimports=['tkinter', 'tkinter.ttk', 'requests', 'bs4', 'beautifulsoup4'],
+    datas=[('app_icon.ico', '.')],
+    hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['app_icon.ico'],
 )

@@ -23,6 +23,8 @@ a = Analysis(
         'time',
         'os',
         'ctypes',
+        'win32clipboard',
+        'win32con',
     ],
     hookspath=[],
     hooksconfig={},
