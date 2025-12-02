@@ -1,0 +1,431 @@
+{
+  "query_info": {
+    "target_company": "海南玮峻思投资合伙企业（有限合伙）",
+    "company_gid": "2349177005",
+    "query_time": "2025-09-04 15:54:15",
+    "max_depth": 5,
+    "total_companies_queried": 4
+  },
+  "penetration_tree": {
+    "company_name": "海南玮峻思投资合伙企业（有限合伙）",
+    "gid": "2349177005",
+    "depth": 0,
+    "shareholders": [
+      {
+        "shareholder_name": "潘思铭",
+        "percentage": 77.5379,
+        "actual_percentage": 77.5379,
+        "capital": "13429.5728万元人民币",
+        "type": "自然人股东",
+        "gid": 2349177005,
+        "is_company": false,
+        "sub_shareholders": []
+      },
+      {
+        "shareholder_name": "李暾",
+        "percentage": 8.4956,
+        "actual_percentage": 8.4956,
+        "capital": "1471.4359万元人民币",
+        "type": "自然人股东",
+        "gid": 2349177005,
+        "is_company": false,
+        "sub_shareholders": []
+      },
+      {
+        "shareholder_name": "范峻",
+        "percentage": 7.2603,
+        "actual_percentage": 7.2603,
+        "capital": "1257.4766万元人民币",
+        "type": "自然人股东",
+        "gid": 2349177005,
+        "is_company": false,
+        "sub_shareholders": []
+      },
+      {
+        "shareholder_name": "贺大玮",
+        "percentage": 5.5515,
+        "actual_percentage": 5.5515,
+        "capital": "961.5147万元人民币",
+        "type": "自然人股东",
+        "gid": 2349177005,
+        "is_company": false,
+        "sub_shareholders": []
+      },
+      {
+        "shareholder_name": "广州市铭峻暾玮企业管理有限公司",
+        "percentage": 0.5774,
+        "actual_percentage": 0.5774,
+        "capital": "100万元人民币",
+        "type": "企业法人",
+        "gid": 2376373888,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "广州市铭峻暾玮企业管理有限公司",
+          "gid": 2376373888,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "潘思铭",
+              "percentage": 80.0,
+              "actual_percentage": 0.46192,
+              "capital": "0.8万元人民币",
+              "type": "自然人股东",
+              "gid": 2376373888,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "贺大玮",
+              "percentage": 20.0,
+              "actual_percentage": 0.11548,
+              "capital": "0.2万元人民币",
+              "type": "自然人股东",
+              "gid": 2376373888,
+              "is_company": false,
+              "sub_shareholders": []
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      },
+      {
+        "shareholder_name": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+        "percentage": 0.5774,
+        "actual_percentage": 0.5774,
+        "capital": "100万元人民币",
+        "type": "合伙企业",
+        "gid": 3214903827,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "gid": 3214903827,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "海南铭峻暾玮企业管理中心（有限合伙）",
+              "percentage": 99.9,
+              "actual_percentage": 0.5768226000000001,
+              "capital": "99.9万元人民币",
+              "type": "企业法人",
+              "gid": 5325424951,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "海南铭峻暾玮企业管理中心（有限合伙）",
+                "gid": 5325424951,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "潘思铭",
+                    "percentage": 77.49,
+                    "actual_percentage": 0.44697983274,
+                    "capital": "7.749万元人民币",
+                    "type": "自然人股东",
+                    "gid": 5325424951,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "李暾",
+                    "percentage": 9.51,
+                    "actual_percentage": 0.05485582926,
+                    "capital": "0.951万元人民币",
+                    "type": "自然人股东",
+                    "gid": 5325424951,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "范峻",
+                    "percentage": 7.31,
+                    "actual_percentage": 0.04216573206,
+                    "capital": "0.731万元人民币",
+                    "type": "自然人股东",
+                    "gid": 5325424951,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "贺大玮",
+                    "percentage": 5.69,
+                    "actual_percentage": 0.03282120594000001,
+                    "capital": "0.569万元人民币",
+                    "type": "自然人股东",
+                    "gid": 5325424951,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  }
+                ],
+                "total_shareholders": 4,
+                "penetrated_shareholders": 4
+              }
+            },
+            {
+              "shareholder_name": "广州市铭峻暾玮企业管理有限公司",
+              "percentage": 0.1,
+              "actual_percentage": 0.0005774,
+              "capital": "0.1万元人民币",
+              "type": "企业法人",
+              "gid": 2376373888,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "广州市铭峻暾玮企业管理有限公司",
+                "gid": 2376373888,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      }
+    ],
+    "total_shareholders": 6,
+    "penetrated_shareholders": 6
+  },
+  "statistics": {
+    "total_levels": 2,
+    "total_shareholders": 14,
+    "company_shareholders": 4,
+    "individual_shareholders": 10,
+    "max_individual_percentage": 77.5379,
+    "total_percentage_covered": 100.00009999999999
+  },
+  "ultimate_beneficiaries": [
+    {
+      "name": "潘思铭",
+      "final_percentage": 77.5379,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "潘思铭",
+          "percentage": 77.5379
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "李暾",
+      "final_percentage": 8.4956,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "李暾",
+          "percentage": 8.4956
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "范峻",
+      "final_percentage": 7.2603,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "范峻",
+          "percentage": 7.2603
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "贺大玮",
+      "final_percentage": 5.5515,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "贺大玮",
+          "percentage": 5.5515
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "潘思铭",
+      "final_percentage": 0.46192,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "广州市铭峻暾玮企业管理有限公司",
+          "percentage": 0.5774
+        },
+        {
+          "company": "广州市铭峻暾玮企业管理有限公司",
+          "shareholder": "潘思铭",
+          "percentage": 80.0
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "潘思铭",
+      "final_percentage": 0.44697983274,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "percentage": 0.5774
+        },
+        {
+          "company": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "shareholder": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "percentage": 99.9
+        },
+        {
+          "company": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "shareholder": "潘思铭",
+          "percentage": 77.49
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "贺大玮",
+      "final_percentage": 0.11548,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "广州市铭峻暾玮企业管理有限公司",
+          "percentage": 0.5774
+        },
+        {
+          "company": "广州市铭峻暾玮企业管理有限公司",
+          "shareholder": "贺大玮",
+          "percentage": 20.0
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "李暾",
+      "final_percentage": 0.05485582926,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "percentage": 0.5774
+        },
+        {
+          "company": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "shareholder": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "percentage": 99.9
+        },
+        {
+          "company": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "shareholder": "李暾",
+          "percentage": 9.51
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "范峻",
+      "final_percentage": 0.04216573206,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "percentage": 0.5774
+        },
+        {
+          "company": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "shareholder": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "percentage": 99.9
+        },
+        {
+          "company": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "shareholder": "范峻",
+          "percentage": 7.31
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "贺大玮",
+      "final_percentage": 0.03282120594000001,
+      "path": [
+        {
+          "company": "海南玮峻思投资合伙企业（有限合伙）",
+          "shareholder": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "percentage": 0.5774
+        },
+        {
+          "company": "珠海铭峻暾玮投资合伙企业（有限合伙）",
+          "shareholder": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "percentage": 99.9
+        },
+        {
+          "company": "海南铭峻暾玮企业管理中心（有限合伙）",
+          "shareholder": "贺大玮",
+          "percentage": 5.69
+        }
+      ],
+      "path_length": 3
+    }
+  ],
+  "shareholding_paths": [
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 潘思铭(77.5379%)",
+      "final_beneficiary": "潘思铭",
+      "final_percentage": 77.5379,
+      "path_length": 1
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 李暾(8.4956%)",
+      "final_beneficiary": "李暾",
+      "final_percentage": 8.4956,
+      "path_length": 1
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 范峻(7.2603%)",
+      "final_beneficiary": "范峻",
+      "final_percentage": 7.2603,
+      "path_length": 1
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 贺大玮(5.5515%)",
+      "final_beneficiary": "贺大玮",
+      "final_percentage": 5.5515,
+      "path_length": 1
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 广州市铭峻暾玮企业管理有限公司(0.5774%) → 潘思铭(80.0%)",
+      "final_beneficiary": "潘思铭",
+      "final_percentage": 0.46192,
+      "path_length": 2
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 珠海铭峻暾玮投资合伙企业（有限合伙）(0.5774%) → 海南铭峻暾玮企业管理中心（有限合伙）(99.9%) → 潘思铭(77.49%)",
+      "final_beneficiary": "潘思铭",
+      "final_percentage": 0.44697983274,
+      "path_length": 3
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 广州市铭峻暾玮企业管理有限公司(0.5774%) → 贺大玮(20.0%)",
+      "final_beneficiary": "贺大玮",
+      "final_percentage": 0.11548,
+      "path_length": 2
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 珠海铭峻暾玮投资合伙企业（有限合伙）(0.5774%) → 海南铭峻暾玮企业管理中心（有限合伙）(99.9%) → 李暾(9.51%)",
+      "final_beneficiary": "李暾",
+      "final_percentage": 0.05485582926,
+      "path_length": 3
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 珠海铭峻暾玮投资合伙企业（有限合伙）(0.5774%) → 海南铭峻暾玮企业管理中心（有限合伙）(99.9%) → 范峻(7.31%)",
+      "final_beneficiary": "范峻",
+      "final_percentage": 0.04216573206,
+      "path_length": 3
+    },
+    {
+      "path": "海南玮峻思投资合伙企业（有限合伙） → 珠海铭峻暾玮投资合伙企业（有限合伙）(0.5774%) → 海南铭峻暾玮企业管理中心（有限合伙）(99.9%) → 贺大玮(5.69%)",
+      "final_beneficiary": "贺大玮",
+      "final_percentage": 0.03282120594000001,
+      "path_length": 3
+    }
+  ],
+  "data_source": "天眼查API"
+}

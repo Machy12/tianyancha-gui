@@ -1,0 +1,507 @@
+{
+  "query_info": {
+    "target_company": "哈尔滨鼎晟恒泰投资管理有限公司",
+    "company_gid": "3147074464",
+    "query_time": "2025-09-04 15:39:45",
+    "max_depth": 5,
+    "total_companies_queried": 10
+  },
+  "penetration_tree": {
+    "company_name": "哈尔滨鼎晟恒泰投资管理有限公司",
+    "gid": "3147074464",
+    "depth": 0,
+    "shareholders": [
+      {
+        "shareholder_name": "深圳市恒泰华盛资产管理有限公司",
+        "percentage": 45.0,
+        "actual_percentage": 45.0,
+        "capital": "450万元人民币",
+        "type": "企业法人",
+        "gid": 1705399026,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "深圳市恒泰华盛资产管理有限公司",
+          "gid": 1705399026,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "郝丹",
+              "percentage": 96.0,
+              "actual_percentage": 43.2,
+              "capital": "9600万元人民币",
+              "type": "自然人股东",
+              "gid": 1705399026,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "郝丹",
+                "gid": 1705399026,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "深圳市华盛十八期股权投资企业（有限合伙）",
+              "percentage": 4.0,
+              "actual_percentage": 1.8,
+              "capital": "400万元人民币",
+              "type": "企业法人",
+              "gid": 2349272164,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "深圳市华盛十八期股权投资企业（有限合伙）",
+                "gid": 2349272164,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "房菲菲",
+                    "percentage": 33.3575,
+                    "actual_percentage": 0.600435,
+                    "capital": "133.43万元人民币",
+                    "type": "自然人股东",
+                    "gid": 2349272164,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "房菲菲",
+                      "gid": 2349272164,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "伍秀婷",
+                    "percentage": 26.3525,
+                    "actual_percentage": 0.474345,
+                    "capital": "105.41万元人民币",
+                    "type": "自然人股东",
+                    "gid": 2349272164,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "伍秀婷",
+                      "gid": 2349272164,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "郝丹",
+                    "percentage": 20.275,
+                    "actual_percentage": 0.36495,
+                    "capital": "81.1万元人民币",
+                    "type": "自然人股东",
+                    "gid": 2349272164,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "郝丹",
+                      "gid": 2349272164,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "文潇",
+                    "percentage": 13.3425,
+                    "actual_percentage": 0.24016500000000002,
+                    "capital": "53.37万元人民币",
+                    "type": "自然人股东",
+                    "gid": 2349272164,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "文潇",
+                      "gid": 2349272164,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "张科",
+                    "percentage": 6.6725,
+                    "actual_percentage": 0.120105,
+                    "capital": "26.69万元人民币",
+                    "type": "自然人股东",
+                    "gid": 2349272164,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "张科",
+                      "gid": 2349272164,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  }
+                ],
+                "total_shareholders": 5,
+                "penetrated_shareholders": 5
+              }
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      },
+      {
+        "shareholder_name": "宁波锦享谦溢企业管理中心（有限合伙）",
+        "percentage": 20.0,
+        "actual_percentage": 20.0,
+        "capital": "200万元人民币",
+        "type": "企业法人",
+        "gid": 3072864762,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "宁波锦享谦溢企业管理中心（有限合伙）",
+          "gid": 3072864762,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "宁波曦乐企业管理合伙企业（有限合伙）",
+              "percentage": 39.9334,
+              "actual_percentage": 7.98668,
+              "capital": "240万元人民币",
+              "type": "企业法人",
+              "gid": 3485507838,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "宁波曦乐企业管理合伙企业（有限合伙）",
+                "gid": 3485507838,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "陈欢",
+                    "percentage": 40.0,
+                    "actual_percentage": 3.1946719999999997,
+                    "capital": "40万元人民币",
+                    "type": "自然人股东",
+                    "gid": 3485507838,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "陈欢",
+                      "gid": 3485507838,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "王巧稚",
+                    "percentage": 30.0,
+                    "actual_percentage": 2.3960039999999996,
+                    "capital": "30万元人民币",
+                    "type": "自然人股东",
+                    "gid": 3485507838,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "王巧稚",
+                      "gid": 3485507838,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "戴银平",
+                    "percentage": 30.0,
+                    "actual_percentage": 2.3960039999999996,
+                    "capital": "30万元人民币",
+                    "type": "自然人股东",
+                    "gid": 3485507838,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "戴银平",
+                      "gid": 3485507838,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  }
+                ],
+                "total_shareholders": 3,
+                "penetrated_shareholders": 3
+              }
+            },
+            {
+              "shareholder_name": "陈欢",
+              "percentage": 14.975,
+              "actual_percentage": 2.995,
+              "capital": "90万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "陈欢",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "付婧",
+              "percentage": 9.9834,
+              "actual_percentage": 1.99668,
+              "capital": "60万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "付婧",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "贾海宁",
+              "percentage": 9.9834,
+              "actual_percentage": 1.99668,
+              "capital": "60万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "贾海宁",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "田玉民",
+              "percentage": 7.4875,
+              "actual_percentage": 1.4975,
+              "capital": "45万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "田玉民",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "丁厚毅",
+              "percentage": 4.9917,
+              "actual_percentage": 0.99834,
+              "capital": "30万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "丁厚毅",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "张健",
+              "percentage": 4.9917,
+              "actual_percentage": 0.99834,
+              "capital": "30万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "张健",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "宋凯",
+              "percentage": 4.9917,
+              "actual_percentage": 0.99834,
+              "capital": "30万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "宋凯",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "谢传兴",
+              "percentage": 2.4958,
+              "actual_percentage": 0.49916,
+              "capital": "15万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "谢传兴",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "房菲菲",
+              "percentage": 0.1664,
+              "actual_percentage": 0.03328,
+              "capital": "1万元人民币",
+              "type": "自然人股东",
+              "gid": 3072864762,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "房菲菲",
+                "gid": 3072864762,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            }
+          ],
+          "total_shareholders": 10,
+          "penetrated_shareholders": 10
+        }
+      },
+      {
+        "shareholder_name": "哈尔滨哈投资本有限公司",
+        "percentage": 20.0,
+        "actual_percentage": 20.0,
+        "capital": "200万元人民币",
+        "type": "企业法人",
+        "gid": 3390764084,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "哈尔滨哈投资本有限公司",
+          "gid": 3390764084,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "哈尔滨投资集团有限责任公司",
+              "percentage": 100.0,
+              "actual_percentage": 20.0,
+              "capital": "50000万元人民币",
+              "type": "企业法人",
+              "gid": 183035416,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "哈尔滨投资集团有限责任公司",
+                "gid": 183035416,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "哈尔滨市人民政府国有资产监督管理委员会",
+                    "percentage": 90.0,
+                    "actual_percentage": 18.0,
+                    "capital": "450000万元人民币",
+                    "type": "机关法人",
+                    "gid": 319874361,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "哈尔滨市人民政府国有资产监督管理委员会",
+                      "gid": 319874361,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "无股东信息"
+                    }
+                  },
+                  {
+                    "shareholder_name": "黑龙江省人民政府国有资产监督管理委员会",
+                    "percentage": 10.0,
+                    "actual_percentage": 2.0,
+                    "capital": "50000万元人民币",
+                    "type": "机关法人",
+                    "gid": 182652314,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "黑龙江省人民政府国有资产监督管理委员会",
+                      "gid": 182652314,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "无股东信息"
+                    }
+                  }
+                ],
+                "total_shareholders": 2,
+                "penetrated_shareholders": 2
+              }
+            }
+          ],
+          "total_shareholders": 1,
+          "penetrated_shareholders": 1
+        }
+      },
+      {
+        "shareholder_name": "哈尔滨创业投资集团有限公司",
+        "percentage": 15.0,
+        "actual_percentage": 15.0,
+        "capital": "150万元人民币",
+        "type": "企业法人",
+        "gid": 179619968,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "哈尔滨创业投资集团有限公司",
+          "gid": 179619968,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "哈尔滨市人民政府国有资产监督管理委员会",
+              "percentage": 94.9713,
+              "actual_percentage": 14.245695000000001,
+              "capital": "284913.839504万元人民币",
+              "type": "机关法人",
+              "gid": 319874361,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "哈尔滨市人民政府国有资产监督管理委员会",
+                "gid": 319874361,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "黑龙江省人民政府国有资产监督管理委员会",
+              "percentage": 5.0287,
+              "actual_percentage": 0.754305,
+              "capital": "15086.160496万元人民币",
+              "type": "机关法人",
+              "gid": 182652314,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "黑龙江省人民政府国有资产监督管理委员会",
+                "gid": 182652314,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      }
+    ],
+    "total_shareholders": 4,
+    "penetrated_shareholders": 4
+  },
+  "statistics": {
+    "total_levels": 3,
+    "total_shareholders": 29,
+    "company_shareholders": 29,
+    "individual_shareholders": 0,
+    "max_individual_percentage": 0.0,
+    "total_percentage_covered": 100.0
+  },
+  "ultimate_beneficiaries": [],
+  "shareholding_paths": [],
+  "data_source": "天眼查API"
+}

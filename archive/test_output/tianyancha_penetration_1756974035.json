@@ -1,0 +1,1916 @@
+{
+  "query_info": {
+    "target_company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+    "company_gid": "4201420729",
+    "query_time": "2025-09-04 16:20:35",
+    "max_depth": 10,
+    "total_companies_queried": 30
+  },
+  "penetration_tree": {
+    "company_name": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+    "gid": "4201420729",
+    "depth": 0,
+    "shareholders": [
+      {
+        "shareholder_name": "重庆机电控股集团信博投资管理有限公司",
+        "percentage": 28.0164,
+        "actual_percentage": 28.016399999999997,
+        "capital": "15000万元人民币",
+        "type": "企业法人",
+        "gid": 152694923,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "重庆机电控股集团信博投资管理有限公司",
+          "gid": 152694923,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "重庆机电控股（集团）公司",
+              "percentage": 100.0,
+              "actual_percentage": 28.016399999999997,
+              "capital": "30000万元人民币",
+              "type": "企业法人",
+              "gid": 143947397,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆机电控股（集团）公司",
+                "gid": 143947397,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "重庆渝富控股集团有限公司",
+                    "percentage": 80.0,
+                    "actual_percentage": 22.41312,
+                    "capital": "294883.536153万元人民币",
+                    "type": "企业法人",
+                    "gid": 2358471489,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "重庆渝富控股集团有限公司",
+                      "gid": 2358471489,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "重庆市国有资产监督管理委员会",
+                          "percentage": 100.0,
+                          "actual_percentage": 22.41312,
+                          "capital": "1680000万元人民币",
+                          "type": "机关法人",
+                          "gid": 141960897,
+                          "is_company": true,
+                          "sub_shareholders": []
+                        }
+                      ],
+                      "total_shareholders": 1,
+                      "penetrated_shareholders": 1
+                    }
+                  },
+                  {
+                    "shareholder_name": "重庆市国有资产监督管理委员会",
+                    "percentage": 20.0,
+                    "actual_percentage": 5.60328,
+                    "capital": "73720.884038万元人民币",
+                    "type": "机关法人",
+                    "gid": 141960897,
+                    "is_company": true,
+                    "sub_shareholders": []
+                  }
+                ],
+                "total_shareholders": 2,
+                "penetrated_shareholders": 2
+              }
+            }
+          ],
+          "total_shareholders": 1,
+          "penetrated_shareholders": 1
+        }
+      },
+      {
+        "shareholder_name": "重庆产业引导股权投资基金有限责任公司",
+        "percentage": 28.0164,
+        "actual_percentage": 28.016399999999997,
+        "capital": "15000万元人民币",
+        "type": "企业法人",
+        "gid": 154905106,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "重庆产业引导股权投资基金有限责任公司",
+          "gid": 154905106,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "重庆科技创新投资集团有限公司",
+              "percentage": 100.0,
+              "actual_percentage": 28.016399999999997,
+              "capital": "1020000万元人民币",
+              "type": "企业法人",
+              "gid": 4660412950,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆科技创新投资集团有限公司",
+                "gid": 4660412950,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "重庆渝富控股集团有限公司",
+                    "percentage": 100.0,
+                    "actual_percentage": 28.016399999999997,
+                    "capital": "1000000万元人民币",
+                    "type": "企业法人",
+                    "gid": 2358471489,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "重庆渝富控股集团有限公司",
+                      "gid": 2358471489,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  }
+                ],
+                "total_shareholders": 1,
+                "penetrated_shareholders": 1
+              }
+            }
+          ],
+          "total_shareholders": 1,
+          "penetrated_shareholders": 1
+        }
+      },
+      {
+        "shareholder_name": "湖南高新创业投资集团有限公司",
+        "percentage": 14.0082,
+        "actual_percentage": 14.008199999999999,
+        "capital": "7500万元人民币",
+        "type": "企业法人",
+        "gid": 6515109,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "湖南高新创业投资集团有限公司",
+          "gid": 6515109,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "湖南省人民政府国有资产监督管理委员会",
+              "percentage": 81.3617,
+              "actual_percentage": 11.397309659399998,
+              "capital": "829408.52万元人民币",
+              "type": "机关法人",
+              "gid": 362768308,
+              "is_company": true,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "湖南兴湘投资控股集团有限公司",
+              "percentage": 9.8096,
+              "actual_percentage": 1.3741483871999998,
+              "capital": "100000万元人民币",
+              "type": "企业法人",
+              "gid": 221387663,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "湖南兴湘投资控股集团有限公司",
+                "gid": 221387663,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "湖南省人民政府国有资产监督管理委员会",
+                    "percentage": 90.0,
+                    "actual_percentage": 1.2367335484799997,
+                    "capital": "2700000万元人民币",
+                    "type": "机关法人",
+                    "gid": 362768308,
+                    "is_company": true,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "湖南省国有投资经营有限公司",
+                    "percentage": 10.0,
+                    "actual_percentage": 0.13741483872,
+                    "capital": "300000万元人民币",
+                    "type": "企业法人",
+                    "gid": 366517845,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "湖南省国有投资经营有限公司",
+                      "gid": 366517845,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "湖南财信金融控股集团有限公司",
+                          "percentage": 100.0,
+                          "actual_percentage": 0.13741483872,
+                          "capital": "33282.06万元人民币",
+                          "type": "企业法人",
+                          "gid": 2335312813,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "湖南财信金融控股集团有限公司",
+                            "gid": 2335312813,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "湖南省人民政府办公厅",
+                                "percentage": 100.0,
+                                "actual_percentage": 0.13741483872,
+                                "capital": "1442800万元人民币",
+                                "type": "企业法人",
+                                "gid": 2969951836,
+                                "is_company": true,
+                                "sub_shareholders": []
+                              }
+                            ],
+                            "total_shareholders": 1,
+                            "penetrated_shareholders": 1
+                          }
+                        }
+                      ],
+                      "total_shareholders": 1,
+                      "penetrated_shareholders": 1
+                    }
+                  }
+                ],
+                "total_shareholders": 2,
+                "penetrated_shareholders": 2
+              }
+            },
+            {
+              "shareholder_name": "湖南省国有投资经营有限公司",
+              "percentage": 8.8286,
+              "actual_percentage": 1.2367279451999997,
+              "capital": "90000万元人民币",
+              "type": "企业法人",
+              "gid": 366517845,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "湖南省国有投资经营有限公司",
+                "gid": 366517845,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            }
+          ],
+          "total_shareholders": 3,
+          "penetrated_shareholders": 3
+        }
+      },
+      {
+        "shareholder_name": "重庆博奥实业（集团）有限公司",
+        "percentage": 14.0082,
+        "actual_percentage": 14.008199999999999,
+        "capital": "7500万元人民币",
+        "type": "企业法人",
+        "gid": 144030187,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "重庆博奥实业（集团）有限公司",
+          "gid": 144030187,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "重庆盛华化工有限公司",
+              "percentage": 99.0,
+              "actual_percentage": 13.868117999999999,
+              "capital": "990万元人民币",
+              "type": "企业法人",
+              "gid": 146286512,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆盛华化工有限公司",
+                "gid": 146286512,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "汪武扬",
+                    "percentage": 95.0,
+                    "actual_percentage": 13.174712099999999,
+                    "capital": "475万元人民币",
+                    "type": "自然人股东",
+                    "gid": 146286512,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "汪少伟",
+                    "percentage": 3.0,
+                    "actual_percentage": 0.41604354,
+                    "capital": "15万元人民币",
+                    "type": "自然人股东",
+                    "gid": 146286512,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "汪小萍",
+                    "percentage": 2.0,
+                    "actual_percentage": 0.27736236,
+                    "capital": "10万元人民币",
+                    "type": "自然人股东",
+                    "gid": 146286512,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  }
+                ],
+                "total_shareholders": 3,
+                "penetrated_shareholders": 3
+              }
+            },
+            {
+              "shareholder_name": "汪少伟",
+              "percentage": 1.0,
+              "actual_percentage": 0.14008199999999998,
+              "capital": "10万元人民币",
+              "type": "自然人股东",
+              "gid": 144030187,
+              "is_company": false,
+              "sub_shareholders": []
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      },
+      {
+        "shareholder_name": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+        "percentage": 9.3388,
+        "actual_percentage": 9.3388,
+        "capital": "5000万元人民币",
+        "type": "企业法人",
+        "gid": 3295004226,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "gid": 3295004226,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "重庆高新创业投资有限公司",
+              "percentage": 99.8004,
+              "actual_percentage": 9.3201597552,
+              "capital": "50000万元人民币",
+              "type": "企业法人",
+              "gid": 153893573,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆高新创业投资有限公司",
+                "gid": 153893573,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "重庆两江新区产业发展集团有限公司",
+                    "percentage": 100.0,
+                    "actual_percentage": 9.3201597552,
+                    "capital": "20000万元人民币",
+                    "type": "企业法人",
+                    "gid": 2352754696,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "重庆两江新区产业发展集团有限公司",
+                      "gid": 2352754696,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "重庆两江新区管理委员会",
+                          "percentage": 100.0,
+                          "actual_percentage": 9.3201597552,
+                          "capital": "1000000万元人民币",
+                          "type": "机关法人",
+                          "gid": 146139775,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "重庆两江新区管理委员会",
+                            "gid": 146139775,
+                            "depth": 4,
+                            "shareholders": [],
+                            "stop_reason": "无股东信息"
+                          }
+                        }
+                      ],
+                      "total_shareholders": 1,
+                      "penetrated_shareholders": 1
+                    }
+                  }
+                ],
+                "total_shareholders": 1,
+                "penetrated_shareholders": 1
+              }
+            },
+            {
+              "shareholder_name": "重庆承运企业管理有限公司",
+              "percentage": 0.1996,
+              "actual_percentage": 0.0186402448,
+              "capital": "100万元人民币",
+              "type": "企业法人",
+              "gid": 2349723832,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆承运企业管理有限公司",
+                "gid": 2349723832,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "重庆两江股权投资基金管理有限公司",
+                    "percentage": 99.5,
+                    "actual_percentage": 0.018547043576,
+                    "capital": "995万元人民币",
+                    "type": "企业法人",
+                    "gid": 914934416,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "重庆两江股权投资基金管理有限公司",
+                      "gid": 914934416,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "重庆两江新区产业发展集团有限公司",
+                          "percentage": 100.0,
+                          "actual_percentage": 0.018547043576,
+                          "capital": "10000万元人民币",
+                          "type": "企业法人",
+                          "gid": 2352754696,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "重庆两江新区产业发展集团有限公司",
+                            "gid": 2352754696,
+                            "depth": 4,
+                            "shareholders": [],
+                            "stop_reason": "循环引用"
+                          }
+                        }
+                      ],
+                      "total_shareholders": 1,
+                      "penetrated_shareholders": 1
+                    }
+                  },
+                  {
+                    "shareholder_name": "重庆两江合同履约担保有限公司",
+                    "percentage": 0.5,
+                    "actual_percentage": 9.3201224e-05,
+                    "capital": "5万元人民币",
+                    "type": "企业法人",
+                    "gid": 914933570,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "重庆两江合同履约担保有限公司",
+                      "gid": 914933570,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "重庆金诚千里企业管理有限公司",
+                          "percentage": 51.0204,
+                          "actual_percentage": 4.7551637289696e-05,
+                          "capital": "30000万元人民币",
+                          "type": "企业法人",
+                          "gid": 6732400428,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "重庆金诚千里企业管理有限公司",
+                            "gid": 6732400428,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "重庆两江新区管理委员会",
+                                "percentage": 100.0,
+                                "actual_percentage": 4.7551637289696e-05,
+                                "capital": "1000万元人民币",
+                                "type": "机关法人",
+                                "gid": 146139775,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "重庆两江新区管理委员会",
+                                  "gid": 146139775,
+                                  "depth": 5,
+                                  "shareholders": [],
+                                  "stop_reason": "循环引用"
+                                }
+                              }
+                            ],
+                            "total_shareholders": 1,
+                            "penetrated_shareholders": 1
+                          }
+                        },
+                        {
+                          "shareholder_name": "重庆天脉实业有限公司",
+                          "percentage": 32.6531,
+                          "actual_percentage": 3.0433088873944003e-05,
+                          "capital": "19200万元人民币",
+                          "type": "企业法人",
+                          "gid": 155415324,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "重庆天脉实业有限公司",
+                            "gid": 155415324,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "重庆新邦辰商贸有限公司",
+                                "percentage": 90.0,
+                                "actual_percentage": 2.7389779986549603e-05,
+                                "capital": "45000万元人民币",
+                                "type": "企业法人",
+                                "gid": 146515097,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "重庆新邦辰商贸有限公司",
+                                  "gid": 146515097,
+                                  "depth": 5,
+                                  "shareholders": [
+                                    {
+                                      "shareholder_name": "李治民",
+                                      "percentage": 50.0,
+                                      "actual_percentage": 1.3694889993274802e-05,
+                                      "capital": "50万元人民币",
+                                      "type": "自然人股东",
+                                      "gid": 146515097,
+                                      "is_company": false,
+                                      "sub_shareholders": []
+                                    },
+                                    {
+                                      "shareholder_name": "重庆环晟实业有限责任公司",
+                                      "percentage": 50.0,
+                                      "actual_percentage": 1.3694889993274802e-05,
+                                      "capital": "50万元人民币",
+                                      "type": "企业法人",
+                                      "gid": 631471528,
+                                      "is_company": true,
+                                      "sub_shareholders": {
+                                        "company_name": "重庆环晟实业有限责任公司",
+                                        "gid": 631471528,
+                                        "depth": 6,
+                                        "shareholders": [
+                                          {
+                                            "shareholder_name": "周林",
+                                            "percentage": 90.0,
+                                            "actual_percentage": 1.2325400993947321e-05,
+                                            "capital": "900万元人民币",
+                                            "type": "自然人股东",
+                                            "gid": 631471528,
+                                            "is_company": false,
+                                            "sub_shareholders": []
+                                          },
+                                          {
+                                            "shareholder_name": "重庆多点利科技有限公司",
+                                            "percentage": 10.0,
+                                            "actual_percentage": 1.3694889993274803e-06,
+                                            "capital": "100万元人民币",
+                                            "type": "企业法人",
+                                            "gid": 767850240,
+                                            "is_company": true,
+                                            "sub_shareholders": {
+                                              "company_name": "重庆多点利科技有限公司",
+                                              "gid": 767850240,
+                                              "depth": 7,
+                                              "shareholders": [
+                                                {
+                                                  "shareholder_name": "重庆天脉实业有限公司",
+                                                  "percentage": 99.0,
+                                                  "actual_percentage": 1.3557941093342054e-06,
+                                                  "capital": "495万元人民币",
+                                                  "type": "企业法人",
+                                                  "gid": 155415324,
+                                                  "is_company": true,
+                                                  "sub_shareholders": {
+                                                    "company_name": "重庆天脉实业有限公司",
+                                                    "gid": 155415324,
+                                                    "depth": 8,
+                                                    "shareholders": [],
+                                                    "stop_reason": "循环引用"
+                                                  }
+                                                },
+                                                {
+                                                  "shareholder_name": "李治民",
+                                                  "percentage": 1.0,
+                                                  "actual_percentage": 1.3694889993274802e-08,
+                                                  "capital": "5万元人民币",
+                                                  "type": "自然人股东",
+                                                  "gid": 767850240,
+                                                  "is_company": false,
+                                                  "sub_shareholders": []
+                                                }
+                                              ],
+                                              "total_shareholders": 2,
+                                              "penetrated_shareholders": 2
+                                            }
+                                          }
+                                        ],
+                                        "total_shareholders": 2,
+                                        "penetrated_shareholders": 2
+                                      }
+                                    }
+                                  ],
+                                  "total_shareholders": 2,
+                                  "penetrated_shareholders": 2
+                                }
+                              },
+                              {
+                                "shareholder_name": "李治民",
+                                "percentage": 10.0,
+                                "actual_percentage": 3.0433088873944e-06,
+                                "capital": "5000万元人民币",
+                                "type": "自然人股东",
+                                "gid": 155415324,
+                                "is_company": false,
+                                "sub_shareholders": []
+                              }
+                            ],
+                            "total_shareholders": 2,
+                            "penetrated_shareholders": 2
+                          }
+                        },
+                        {
+                          "shareholder_name": "重庆百年上邦实业（集团）有限公司",
+                          "percentage": 16.3265,
+                          "actual_percentage": 1.521649783636e-05,
+                          "capital": "9600万元人民币",
+                          "type": "企业法人",
+                          "gid": 913097226,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "重庆百年上邦实业（集团）有限公司",
+                            "gid": 913097226,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "胡照钢",
+                                "percentage": 50.8475,
+                                "actual_percentage": 7.737208737343151e-06,
+                                "capital": "3000万元人民币",
+                                "type": "自然人股东",
+                                "gid": 913097226,
+                                "is_company": false,
+                                "sub_shareholders": []
+                              },
+                              {
+                                "shareholder_name": "胡照会",
+                                "percentage": 49.1525,
+                                "actual_percentage": 7.479289099016849e-06,
+                                "capital": "2900万元人民币",
+                                "type": "自然人股东",
+                                "gid": 913097226,
+                                "is_company": false,
+                                "sub_shareholders": []
+                              }
+                            ],
+                            "total_shareholders": 2,
+                            "penetrated_shareholders": 2
+                          }
+                        }
+                      ],
+                      "total_shareholders": 3,
+                      "penetrated_shareholders": 3
+                    }
+                  }
+                ],
+                "total_shareholders": 2,
+                "penetrated_shareholders": 2
+              }
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      },
+      {
+        "shareholder_name": "重庆市宏立摩托车制造有限公司",
+        "percentage": 5.6033,
+        "actual_percentage": 5.603300000000001,
+        "capital": "3000万元人民币",
+        "type": "企业法人",
+        "gid": 152592124,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "重庆市宏立摩托车制造有限公司",
+          "gid": 152592124,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "王忠莲",
+              "percentage": 55.0,
+              "actual_percentage": 3.081815,
+              "capital": "220万元人民币",
+              "type": "自然人股东",
+              "gid": 152592124,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "王宏立",
+              "percentage": 45.0,
+              "actual_percentage": 2.521485,
+              "capital": "180万元人民币",
+              "type": "自然人股东",
+              "gid": 152592124,
+              "is_company": false,
+              "sub_shareholders": []
+            }
+          ],
+          "total_shareholders": 2,
+          "penetrated_shareholders": 2
+        }
+      },
+      {
+        "shareholder_name": "重庆高新创投红马资本管理有限公司",
+        "percentage": 1.0086,
+        "actual_percentage": 1.0086,
+        "capital": "540万元人民币",
+        "type": "企业法人",
+        "gid": 912979137,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "重庆高新创投红马资本管理有限公司",
+          "gid": 912979137,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "重庆红马奔腾投资中心（有限合伙）",
+              "percentage": 36.875,
+              "actual_percentage": 0.37192125,
+              "capital": "1475万元人民币",
+              "type": "企业法人",
+              "gid": 2344973942,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆红马奔腾投资中心（有限合伙）",
+                "gid": 2344973942,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+                    "percentage": 70.951,
+                    "actual_percentage": 0.2638818460874999,
+                    "capital": "1078.5466万元人民币",
+                    "type": "合伙企业",
+                    "gid": 4374218469,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+                      "gid": 4374218469,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "李军",
+                          "percentage": 40.0,
+                          "actual_percentage": 0.10555273843499996,
+                          "capital": "2000万元人民币",
+                          "type": "自然人股东",
+                          "gid": 4374218469,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "夏周煜",
+                          "percentage": 30.0,
+                          "actual_percentage": 0.07916455382624997,
+                          "capital": "1500万元人民币",
+                          "type": "自然人股东",
+                          "gid": 4374218469,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "康庄",
+                          "percentage": 20.0,
+                          "actual_percentage": 0.05277636921749998,
+                          "capital": "1000万元人民币",
+                          "type": "自然人股东",
+                          "gid": 4374218469,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "罗蓉",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.02638818460874999,
+                          "capital": "500万元人民币",
+                          "type": "自然人股东",
+                          "gid": 4374218469,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        }
+                      ],
+                      "total_shareholders": 4,
+                      "penetrated_shareholders": 4
+                    }
+                  },
+                  {
+                    "shareholder_name": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+                    "percentage": 28.9832,
+                    "actual_percentage": 0.10779467973,
+                    "capital": "440.5815万元人民币",
+                    "type": "合伙企业",
+                    "gid": 5231723199,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+                      "gid": 5231723199,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "李佩盈",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "史锦辉",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "廖金",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "王含伊",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "杨婉青",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "何骁阳",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "李娟",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "于子珅",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "赵剑波",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        },
+                        {
+                          "shareholder_name": "刘佳启",
+                          "percentage": 10.0,
+                          "actual_percentage": 0.010779467973,
+                          "capital": "300万元人民币",
+                          "type": "自然人股东",
+                          "gid": 5231723199,
+                          "is_company": false,
+                          "sub_shareholders": []
+                        }
+                      ],
+                      "total_shareholders": 10,
+                      "penetrated_shareholders": 10
+                    }
+                  },
+                  {
+                    "shareholder_name": "李军",
+                    "percentage": 0.0658,
+                    "actual_percentage": 0.0002447241825,
+                    "capital": "1万元人民币",
+                    "type": "自然人股东",
+                    "gid": 2344973942,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  }
+                ],
+                "total_shareholders": 3,
+                "penetrated_shareholders": 3
+              }
+            },
+            {
+              "shareholder_name": "湖南高新创业投资集团有限公司",
+              "percentage": 20.625,
+              "actual_percentage": 0.20802374999999998,
+              "capital": "825万元人民币",
+              "type": "企业法人",
+              "gid": 6515109,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "湖南高新创业投资集团有限公司",
+                "gid": 6515109,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "重庆博奥实业（集团）有限公司",
+              "percentage": 16.25,
+              "actual_percentage": 0.1638975,
+              "capital": "650万元人民币",
+              "type": "企业法人",
+              "gid": 144030187,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆博奥实业（集团）有限公司",
+                "gid": 144030187,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "重庆机电控股集团信博投资管理有限公司",
+              "percentage": 16.25,
+              "actual_percentage": 0.1638975,
+              "capital": "650万元人民币",
+              "type": "企业法人",
+              "gid": 152694923,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆机电控股集团信博投资管理有限公司",
+                "gid": 152694923,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            },
+            {
+              "shareholder_name": "重庆市宏立摩托车制造有限公司",
+              "percentage": 10.0,
+              "actual_percentage": 0.10085999999999999,
+              "capital": "400万元人民币",
+              "type": "企业法人",
+              "gid": 152592124,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "重庆市宏立摩托车制造有限公司",
+                "gid": 152592124,
+                "depth": 2,
+                "shareholders": [],
+                "stop_reason": "循环引用"
+              }
+            }
+          ],
+          "total_shareholders": 5,
+          "penetrated_shareholders": 5
+        }
+      }
+    ],
+    "total_shareholders": 7,
+    "penetrated_shareholders": 7
+  },
+  "statistics": {
+    "total_levels": 8,
+    "total_shareholders": 70,
+    "company_shareholders": 43,
+    "individual_shareholders": 27,
+    "max_individual_percentage": 13.174712099999999,
+    "total_percentage_covered": 99.99990000000001
+  },
+  "ultimate_beneficiaries": [
+    {
+      "name": "汪武扬",
+      "final_percentage": 13.174712099999999,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆博奥实业（集团）有限公司",
+          "percentage": 14.0082
+        },
+        {
+          "company": "重庆博奥实业（集团）有限公司",
+          "shareholder": "重庆盛华化工有限公司",
+          "percentage": 99.0
+        },
+        {
+          "company": "重庆盛华化工有限公司",
+          "shareholder": "汪武扬",
+          "percentage": 95.0
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "王忠莲",
+      "final_percentage": 3.081815,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆市宏立摩托车制造有限公司",
+          "percentage": 5.6033
+        },
+        {
+          "company": "重庆市宏立摩托车制造有限公司",
+          "shareholder": "王忠莲",
+          "percentage": 55.0
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "王宏立",
+      "final_percentage": 2.521485,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆市宏立摩托车制造有限公司",
+          "percentage": 5.6033
+        },
+        {
+          "company": "重庆市宏立摩托车制造有限公司",
+          "shareholder": "王宏立",
+          "percentage": 45.0
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "汪少伟",
+      "final_percentage": 0.41604354,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆博奥实业（集团）有限公司",
+          "percentage": 14.0082
+        },
+        {
+          "company": "重庆博奥实业（集团）有限公司",
+          "shareholder": "重庆盛华化工有限公司",
+          "percentage": 99.0
+        },
+        {
+          "company": "重庆盛华化工有限公司",
+          "shareholder": "汪少伟",
+          "percentage": 3.0
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "汪小萍",
+      "final_percentage": 0.27736236,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆博奥实业（集团）有限公司",
+          "percentage": 14.0082
+        },
+        {
+          "company": "重庆博奥实业（集团）有限公司",
+          "shareholder": "重庆盛华化工有限公司",
+          "percentage": 99.0
+        },
+        {
+          "company": "重庆盛华化工有限公司",
+          "shareholder": "汪小萍",
+          "percentage": 2.0
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "汪少伟",
+      "final_percentage": 0.14008199999999998,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆博奥实业（集团）有限公司",
+          "percentage": 14.0082
+        },
+        {
+          "company": "重庆博奥实业（集团）有限公司",
+          "shareholder": "汪少伟",
+          "percentage": 1.0
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "李军",
+      "final_percentage": 0.10555273843499996,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "percentage": 70.951
+        },
+        {
+          "company": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "shareholder": "李军",
+          "percentage": 40.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "夏周煜",
+      "final_percentage": 0.07916455382624997,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "percentage": 70.951
+        },
+        {
+          "company": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "shareholder": "夏周煜",
+          "percentage": 30.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "康庄",
+      "final_percentage": 0.05277636921749998,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "percentage": 70.951
+        },
+        {
+          "company": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "shareholder": "康庄",
+          "percentage": 20.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "罗蓉",
+      "final_percentage": 0.02638818460874999,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "percentage": 70.951
+        },
+        {
+          "company": "湖南红马奔腾私募股权投资合伙企业（有限合伙）",
+          "shareholder": "罗蓉",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "李佩盈",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "李佩盈",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "史锦辉",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "史锦辉",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "廖金",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "廖金",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "王含伊",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "王含伊",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "杨婉青",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "杨婉青",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "何骁阳",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "何骁阳",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "李娟",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "李娟",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "于子珅",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "于子珅",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "赵剑波",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "赵剑波",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "刘佳启",
+      "final_percentage": 0.010779467973,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "percentage": 28.9832
+        },
+        {
+          "company": "宁波象保合作区红昇企业管理合伙企业（有限合伙）",
+          "shareholder": "刘佳启",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 4
+    },
+    {
+      "name": "李军",
+      "final_percentage": 0.0002447241825,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆高新创投红马资本管理有限公司",
+          "percentage": 1.0086
+        },
+        {
+          "company": "重庆高新创投红马资本管理有限公司",
+          "shareholder": "重庆红马奔腾投资中心（有限合伙）",
+          "percentage": 36.875
+        },
+        {
+          "company": "重庆红马奔腾投资中心（有限合伙）",
+          "shareholder": "李军",
+          "percentage": 0.0658
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "李治民",
+      "final_percentage": 1.3694889993274802e-05,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "percentage": 9.3388
+        },
+        {
+          "company": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆承运企业管理有限公司",
+          "percentage": 0.1996
+        },
+        {
+          "company": "重庆承运企业管理有限公司",
+          "shareholder": "重庆两江合同履约担保有限公司",
+          "percentage": 0.5
+        },
+        {
+          "company": "重庆两江合同履约担保有限公司",
+          "shareholder": "重庆天脉实业有限公司",
+          "percentage": 32.6531
+        },
+        {
+          "company": "重庆天脉实业有限公司",
+          "shareholder": "重庆新邦辰商贸有限公司",
+          "percentage": 90.0
+        },
+        {
+          "company": "重庆新邦辰商贸有限公司",
+          "shareholder": "李治民",
+          "percentage": 50.0
+        }
+      ],
+      "path_length": 6
+    },
+    {
+      "name": "周林",
+      "final_percentage": 1.2325400993947321e-05,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "percentage": 9.3388
+        },
+        {
+          "company": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆承运企业管理有限公司",
+          "percentage": 0.1996
+        },
+        {
+          "company": "重庆承运企业管理有限公司",
+          "shareholder": "重庆两江合同履约担保有限公司",
+          "percentage": 0.5
+        },
+        {
+          "company": "重庆两江合同履约担保有限公司",
+          "shareholder": "重庆天脉实业有限公司",
+          "percentage": 32.6531
+        },
+        {
+          "company": "重庆天脉实业有限公司",
+          "shareholder": "重庆新邦辰商贸有限公司",
+          "percentage": 90.0
+        },
+        {
+          "company": "重庆新邦辰商贸有限公司",
+          "shareholder": "重庆环晟实业有限责任公司",
+          "percentage": 50.0
+        },
+        {
+          "company": "重庆环晟实业有限责任公司",
+          "shareholder": "周林",
+          "percentage": 90.0
+        }
+      ],
+      "path_length": 7
+    },
+    {
+      "name": "胡照钢",
+      "final_percentage": 7.737208737343151e-06,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "percentage": 9.3388
+        },
+        {
+          "company": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆承运企业管理有限公司",
+          "percentage": 0.1996
+        },
+        {
+          "company": "重庆承运企业管理有限公司",
+          "shareholder": "重庆两江合同履约担保有限公司",
+          "percentage": 0.5
+        },
+        {
+          "company": "重庆两江合同履约担保有限公司",
+          "shareholder": "重庆百年上邦实业（集团）有限公司",
+          "percentage": 16.3265
+        },
+        {
+          "company": "重庆百年上邦实业（集团）有限公司",
+          "shareholder": "胡照钢",
+          "percentage": 50.8475
+        }
+      ],
+      "path_length": 5
+    },
+    {
+      "name": "胡照会",
+      "final_percentage": 7.479289099016849e-06,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "percentage": 9.3388
+        },
+        {
+          "company": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆承运企业管理有限公司",
+          "percentage": 0.1996
+        },
+        {
+          "company": "重庆承运企业管理有限公司",
+          "shareholder": "重庆两江合同履约担保有限公司",
+          "percentage": 0.5
+        },
+        {
+          "company": "重庆两江合同履约担保有限公司",
+          "shareholder": "重庆百年上邦实业（集团）有限公司",
+          "percentage": 16.3265
+        },
+        {
+          "company": "重庆百年上邦实业（集团）有限公司",
+          "shareholder": "胡照会",
+          "percentage": 49.1525
+        }
+      ],
+      "path_length": 5
+    },
+    {
+      "name": "李治民",
+      "final_percentage": 3.0433088873944e-06,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "percentage": 9.3388
+        },
+        {
+          "company": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆承运企业管理有限公司",
+          "percentage": 0.1996
+        },
+        {
+          "company": "重庆承运企业管理有限公司",
+          "shareholder": "重庆两江合同履约担保有限公司",
+          "percentage": 0.5
+        },
+        {
+          "company": "重庆两江合同履约担保有限公司",
+          "shareholder": "重庆天脉实业有限公司",
+          "percentage": 32.6531
+        },
+        {
+          "company": "重庆天脉实业有限公司",
+          "shareholder": "李治民",
+          "percentage": 10.0
+        }
+      ],
+      "path_length": 5
+    },
+    {
+      "name": "李治民",
+      "final_percentage": 1.3694889993274802e-08,
+      "path": [
+        {
+          "company": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "percentage": 9.3388
+        },
+        {
+          "company": "重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）",
+          "shareholder": "重庆承运企业管理有限公司",
+          "percentage": 0.1996
+        },
+        {
+          "company": "重庆承运企业管理有限公司",
+          "shareholder": "重庆两江合同履约担保有限公司",
+          "percentage": 0.5
+        },
+        {
+          "company": "重庆两江合同履约担保有限公司",
+          "shareholder": "重庆天脉实业有限公司",
+          "percentage": 32.6531
+        },
+        {
+          "company": "重庆天脉实业有限公司",
+          "shareholder": "重庆新邦辰商贸有限公司",
+          "percentage": 90.0
+        },
+        {
+          "company": "重庆新邦辰商贸有限公司",
+          "shareholder": "重庆环晟实业有限责任公司",
+          "percentage": 50.0
+        },
+        {
+          "company": "重庆环晟实业有限责任公司",
+          "shareholder": "重庆多点利科技有限公司",
+          "percentage": 10.0
+        },
+        {
+          "company": "重庆多点利科技有限公司",
+          "shareholder": "李治民",
+          "percentage": 1.0
+        }
+      ],
+      "path_length": 8
+    }
+  ],
+  "shareholding_paths": [
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆博奥实业（集团）有限公司(14.0082%) → 重庆盛华化工有限公司(99.0%) → 汪武扬(95.0%)",
+      "final_beneficiary": "汪武扬",
+      "final_percentage": 13.174712099999999,
+      "path_length": 3
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆市宏立摩托车制造有限公司(5.6033%) → 王忠莲(55.0%)",
+      "final_beneficiary": "王忠莲",
+      "final_percentage": 3.081815,
+      "path_length": 2
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆市宏立摩托车制造有限公司(5.6033%) → 王宏立(45.0%)",
+      "final_beneficiary": "王宏立",
+      "final_percentage": 2.521485,
+      "path_length": 2
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆博奥实业（集团）有限公司(14.0082%) → 重庆盛华化工有限公司(99.0%) → 汪少伟(3.0%)",
+      "final_beneficiary": "汪少伟",
+      "final_percentage": 0.41604354,
+      "path_length": 3
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆博奥实业（集团）有限公司(14.0082%) → 重庆盛华化工有限公司(99.0%) → 汪小萍(2.0%)",
+      "final_beneficiary": "汪小萍",
+      "final_percentage": 0.27736236,
+      "path_length": 3
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆博奥实业（集团）有限公司(14.0082%) → 汪少伟(1.0%)",
+      "final_beneficiary": "汪少伟",
+      "final_percentage": 0.14008199999999998,
+      "path_length": 2
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 湖南红马奔腾私募股权投资合伙企业（有限合伙）(70.951%) → 李军(40.0%)",
+      "final_beneficiary": "李军",
+      "final_percentage": 0.10555273843499996,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 湖南红马奔腾私募股权投资合伙企业（有限合伙）(70.951%) → 夏周煜(30.0%)",
+      "final_beneficiary": "夏周煜",
+      "final_percentage": 0.07916455382624997,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 湖南红马奔腾私募股权投资合伙企业（有限合伙）(70.951%) → 康庄(20.0%)",
+      "final_beneficiary": "康庄",
+      "final_percentage": 0.05277636921749998,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 湖南红马奔腾私募股权投资合伙企业（有限合伙）(70.951%) → 罗蓉(10.0%)",
+      "final_beneficiary": "罗蓉",
+      "final_percentage": 0.02638818460874999,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 李佩盈(10.0%)",
+      "final_beneficiary": "李佩盈",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 史锦辉(10.0%)",
+      "final_beneficiary": "史锦辉",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 廖金(10.0%)",
+      "final_beneficiary": "廖金",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 王含伊(10.0%)",
+      "final_beneficiary": "王含伊",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 杨婉青(10.0%)",
+      "final_beneficiary": "杨婉青",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 何骁阳(10.0%)",
+      "final_beneficiary": "何骁阳",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 李娟(10.0%)",
+      "final_beneficiary": "李娟",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 于子珅(10.0%)",
+      "final_beneficiary": "于子珅",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 赵剑波(10.0%)",
+      "final_beneficiary": "赵剑波",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 宁波象保合作区红昇企业管理合伙企业（有限合伙）(28.9832%) → 刘佳启(10.0%)",
+      "final_beneficiary": "刘佳启",
+      "final_percentage": 0.010779467973,
+      "path_length": 4
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆高新创投红马资本管理有限公司(1.0086%) → 重庆红马奔腾投资中心（有限合伙）(36.875%) → 李军(0.0658%)",
+      "final_beneficiary": "李军",
+      "final_percentage": 0.0002447241825,
+      "path_length": 3
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）(9.3388%) → 重庆承运企业管理有限公司(0.1996%) → 重庆两江合同履约担保有限公司(0.5%) → 重庆天脉实业有限公司(32.6531%) → 重庆新邦辰商贸有限公司(90.0%) → 李治民(50.0%)",
+      "final_beneficiary": "李治民",
+      "final_percentage": 1.3694889993274802e-05,
+      "path_length": 6
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）(9.3388%) → 重庆承运企业管理有限公司(0.1996%) → 重庆两江合同履约担保有限公司(0.5%) → 重庆天脉实业有限公司(32.6531%) → 重庆新邦辰商贸有限公司(90.0%) → 重庆环晟实业有限责任公司(50.0%) → 周林(90.0%)",
+      "final_beneficiary": "周林",
+      "final_percentage": 1.2325400993947321e-05,
+      "path_length": 7
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）(9.3388%) → 重庆承运企业管理有限公司(0.1996%) → 重庆两江合同履约担保有限公司(0.5%) → 重庆百年上邦实业（集团）有限公司(16.3265%) → 胡照钢(50.8475%)",
+      "final_beneficiary": "胡照钢",
+      "final_percentage": 7.737208737343151e-06,
+      "path_length": 5
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）(9.3388%) → 重庆承运企业管理有限公司(0.1996%) → 重庆两江合同履约担保有限公司(0.5%) → 重庆百年上邦实业（集团）有限公司(16.3265%) → 胡照会(49.1525%)",
+      "final_beneficiary": "胡照会",
+      "final_percentage": 7.479289099016849e-06,
+      "path_length": 5
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）(9.3388%) → 重庆承运企业管理有限公司(0.1996%) → 重庆两江合同履约担保有限公司(0.5%) → 重庆天脉实业有限公司(32.6531%) → 李治民(10.0%)",
+      "final_beneficiary": "李治民",
+      "final_percentage": 3.0433088873944e-06,
+      "path_length": 5
+    },
+    {
+      "path": "重庆两江红马智能化产业股权投资基金合伙企业（有限合伙） → 重庆两江新区科技创新私募股权投资基金合伙企业（有限合伙）(9.3388%) → 重庆承运企业管理有限公司(0.1996%) → 重庆两江合同履约担保有限公司(0.5%) → 重庆天脉实业有限公司(32.6531%) → 重庆新邦辰商贸有限公司(90.0%) → 重庆环晟实业有限责任公司(50.0%) → 重庆多点利科技有限公司(10.0%) → 李治民(1.0%)",
+      "final_beneficiary": "李治民",
+      "final_percentage": 1.3694889993274802e-08,
+      "path_length": 8
+    }
+  ],
+  "data_source": "天眼查API"
+}

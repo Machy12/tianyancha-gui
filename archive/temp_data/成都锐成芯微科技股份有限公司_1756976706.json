@@ -1,0 +1,1241 @@
+{
+  "query_info": {
+    "target_company": "成都锐成芯微科技股份有限公司",
+    "company_gid": "2370153463",
+    "query_time": "2025-09-04 17:05:05",
+    "max_depth": null,
+    "total_companies_queried": 24
+  },
+  "penetration_tree": {
+    "company_name": "成都锐成芯微科技股份有限公司",
+    "gid": "2370153463",
+    "depth": 0,
+    "shareholders": [
+      {
+        "shareholder_name": "向建军",
+        "percentage": 72.0,
+        "actual_percentage": 72.0,
+        "capital": "450万元人民币",
+        "type": "自然人股东",
+        "gid": 2370153463,
+        "is_company": false,
+        "sub_shareholders": []
+      },
+      {
+        "shareholder_name": "苏州聚源东方投资基金（有限合伙）",
+        "percentage": 10.0,
+        "actual_percentage": 10.0,
+        "capital": "62.5万元人民币",
+        "type": "企业法人",
+        "gid": 6986902182,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "苏州聚源东方投资基金（有限合伙）",
+          "gid": 6986902182,
+          "depth": 1,
+          "shareholders": [],
+          "stop_reason": "无股东信息"
+        }
+      },
+      {
+        "shareholder_name": "大唐电信投资有限公司",
+        "percentage": 10.0,
+        "actual_percentage": 10.0,
+        "capital": "62.5万元人民币",
+        "type": "企业法人",
+        "gid": 14661969,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "大唐电信投资有限公司",
+          "gid": 14661969,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "上海任都通投资控股集团有限公司",
+              "percentage": 48.4866,
+              "actual_percentage": 4.848660000000001,
+              "capital": "6060.82万元人民币",
+              "type": "企业法人",
+              "gid": 14662089,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "上海任都通投资控股集团有限公司",
+                "gid": 14662089,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "胡斌",
+                    "percentage": 51.0,
+                    "actual_percentage": 2.4728166000000003,
+                    "capital": "1530万元人民币",
+                    "type": "自然人股东",
+                    "gid": 14662089,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "曹卫东",
+                    "percentage": 31.0,
+                    "actual_percentage": 1.5030846000000002,
+                    "capital": "930万元人民币",
+                    "type": "自然人股东",
+                    "gid": 14662089,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "丁小建",
+                    "percentage": 18.0,
+                    "actual_percentage": 0.8727588000000002,
+                    "capital": "540万元人民币",
+                    "type": "自然人股东",
+                    "gid": 14662089,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  }
+                ],
+                "total_shareholders": 3,
+                "penetrated_shareholders": 3
+              }
+            },
+            {
+              "shareholder_name": "大唐电信科技股份有限公司",
+              "percentage": 40.0,
+              "actual_percentage": 4.0,
+              "capital": "5000万元人民币",
+              "type": "企业法人",
+              "gid": 6173069,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "大唐电信科技股份有限公司",
+                "gid": 6173069,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "电信科学技术研究院有限公司",
+                    "percentage": 21.91,
+                    "actual_percentage": 0.8764,
+                    "capital": "",
+                    "type": "企业法人",
+                    "gid": 3145096714,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "电信科学技术研究院有限公司",
+                      "gid": 3145096714,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "中国信息通信科技集团有限公司",
+                          "percentage": 100.0,
+                          "actual_percentage": 0.8764,
+                          "capital": "789000万元人民币",
+                          "type": "企业法人",
+                          "gid": 3222175189,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "中国信息通信科技集团有限公司",
+                            "gid": 3222175189,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "国务院国有资产监督管理委员会",
+                                "percentage": 100.0,
+                                "actual_percentage": 0.8764,
+                                "capital": "3000000万元人民币",
+                                "type": "机关法人",
+                                "gid": 25942218,
+                                "is_company": true,
+                                "sub_shareholders": []
+                              }
+                            ],
+                            "total_shareholders": 1,
+                            "penetrated_shareholders": 1
+                          }
+                        }
+                      ],
+                      "total_shareholders": 1,
+                      "penetrated_shareholders": 1
+                    }
+                  },
+                  {
+                    "shareholder_name": "中国信息通信科技集团有限公司",
+                    "percentage": 14.64,
+                    "actual_percentage": 0.5856,
+                    "capital": "",
+                    "type": "企业法人",
+                    "gid": 3222175189,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "中国信息通信科技集团有限公司",
+                      "gid": 3222175189,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  },
+                  {
+                    "shareholder_name": "大唐电信科技产业控股有限公司",
+                    "percentage": 11.92,
+                    "actual_percentage": 0.4768,
+                    "capital": "",
+                    "type": "企业法人",
+                    "gid": 3762906,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "大唐电信科技产业控股有限公司",
+                      "gid": 3762906,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "电信科学技术研究院有限公司",
+                          "percentage": 100.0,
+                          "actual_percentage": 0.4768,
+                          "capital": "570000万元人民币",
+                          "type": "企业法人",
+                          "gid": 3145096714,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "电信科学技术研究院有限公司",
+                            "gid": 3145096714,
+                            "depth": 4,
+                            "shareholders": [],
+                            "stop_reason": "循环引用"
+                          }
+                        }
+                      ],
+                      "total_shareholders": 1,
+                      "penetrated_shareholders": 1
+                    }
+                  },
+                  {
+                    "shareholder_name": "湖北长江中信科移动通信技术产业投资基金合伙企业（有限合伙）",
+                    "percentage": 4.1,
+                    "actual_percentage": 0.16399999999999998,
+                    "capital": "",
+                    "type": "企业法人",
+                    "gid": 3388719620,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "湖北长江中信科移动通信技术产业投资基金合伙企业（有限合伙）",
+                      "gid": 3388719620,
+                      "depth": 3,
+                      "shareholders": [
+                        {
+                          "shareholder_name": "武汉光谷烽火光电子信息产业投资基金合伙企业（有限合伙）",
+                          "percentage": 52.766,
+                          "actual_percentage": 0.08653623999999999,
+                          "capital": "248000万元人民币",
+                          "type": "合伙企业",
+                          "gid": 3134437511,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "武汉光谷烽火光电子信息产业投资基金合伙企业（有限合伙）",
+                            "gid": 3134437511,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "武汉中信科资本创业投资基金管理有限公司",
+                                "percentage": 49.1234,
+                                "actual_percentage": 0.042509543320159986,
+                                "capital": "151300万元人民币",
+                                "type": "企业法人",
+                                "gid": 24670555,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "武汉中信科资本创业投资基金管理有限公司",
+                                  "gid": 24670555,
+                                  "depth": 5,
+                                  "shareholders": [
+                                    {
+                                      "shareholder_name": "中国信息通信科技集团有限公司",
+                                      "percentage": 63.4051,
+                                      "actual_percentage": 0.02695321845169076,
+                                      "capital": "183874.6476万元人民币",
+                                      "type": "企业法人",
+                                      "gid": 3222175189,
+                                      "is_company": true,
+                                      "sub_shareholders": {
+                                        "company_name": "中国信息通信科技集团有限公司",
+                                        "gid": 3222175189,
+                                        "depth": 6,
+                                        "shareholders": [],
+                                        "stop_reason": "循环引用"
+                                      }
+                                    }
+                                  ],
+                                  "total_shareholders": 3,
+                                  "penetrated_shareholders": 1
+                                }
+                              },
+                              {
+                                "shareholder_name": "武汉光谷产业投资有限公司",
+                                "percentage": 47.4351,
+                                "actual_percentage": 0.041048551980239996,
+                                "capital": "146100万元人民币",
+                                "type": "企业法人",
+                                "gid": 2357758088,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "武汉光谷产业投资有限公司",
+                                  "gid": 2357758088,
+                                  "depth": 5,
+                                  "shareholders": [
+                                    {
+                                      "shareholder_name": "湖北省科技投资集团有限公司",
+                                      "percentage": 100.0,
+                                      "actual_percentage": 0.041048551980239996,
+                                      "capital": "1300000万元人民币",
+                                      "type": "企业法人",
+                                      "gid": 288123640,
+                                      "is_company": true,
+                                      "sub_shareholders": {
+                                        "company_name": "湖北省科技投资集团有限公司",
+                                        "gid": 288123640,
+                                        "depth": 6,
+                                        "shareholders": [
+                                          {
+                                            "shareholder_name": "武汉东湖新技术开发区管理委员会",
+                                            "percentage": 100.0,
+                                            "actual_percentage": 0.041048551980239996,
+                                            "capital": "4000000万元人民币",
+                                            "type": "机关法人",
+                                            "gid": 1008338481,
+                                            "is_company": true,
+                                            "sub_shareholders": []
+                                          }
+                                        ],
+                                        "total_shareholders": 1,
+                                        "penetrated_shareholders": 1
+                                      }
+                                    }
+                                  ],
+                                  "total_shareholders": 1,
+                                  "penetrated_shareholders": 1
+                                }
+                              }
+                            ],
+                            "total_shareholders": 4,
+                            "penetrated_shareholders": 2
+                          }
+                        },
+                        {
+                          "shareholder_name": "武汉市工业发展投资基金（有限合伙）",
+                          "percentage": 21.2766,
+                          "actual_percentage": 0.03489362399999999,
+                          "capital": "100000万元人民币",
+                          "type": "合伙企业",
+                          "gid": 3379266598,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "武汉市工业发展投资基金（有限合伙）",
+                            "gid": 3379266598,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "武汉产业发展基金有限公司",
+                                "percentage": 99.95,
+                                "actual_percentage": 0.03487617718799999,
+                                "capital": "199900万元人民币",
+                                "type": "企业法人",
+                                "gid": 4957877632,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "武汉产业发展基金有限公司",
+                                  "gid": 4957877632,
+                                  "depth": 5,
+                                  "shareholders": [
+                                    {
+                                      "shareholder_name": "武汉国有资本投资运营集团有限公司",
+                                      "percentage": 100.0,
+                                      "actual_percentage": 0.03487617718799999,
+                                      "capital": "3000000万元人民币",
+                                      "type": "企业法人",
+                                      "gid": 2977117686,
+                                      "is_company": true,
+                                      "sub_shareholders": {
+                                        "company_name": "武汉国有资本投资运营集团有限公司",
+                                        "gid": 2977117686,
+                                        "depth": 6,
+                                        "shareholders": [
+                                          {
+                                            "shareholder_name": "武汉产业投资控股集团有限公司",
+                                            "percentage": 98.6205,
+                                            "actual_percentage": 0.03439506032369153,
+                                            "capital": "2958614.360196万元人民币",
+                                            "type": "企业法人",
+                                            "gid": 5886234028,
+                                            "is_company": true,
+                                            "sub_shareholders": {
+                                              "company_name": "武汉产业投资控股集团有限公司",
+                                              "gid": 5886234028,
+                                              "depth": 7,
+                                              "shareholders": [
+                                                {
+                                                  "shareholder_name": "武汉市人民政府国有资产监督管理委员会",
+                                                  "percentage": 100.0,
+                                                  "actual_percentage": 0.03439506032369153,
+                                                  "capital": "2032099.018482万元人民币",
+                                                  "type": "机关法人",
+                                                  "gid": 657113101,
+                                                  "is_company": true,
+                                                  "sub_shareholders": []
+                                                }
+                                              ],
+                                              "total_shareholders": 1,
+                                              "penetrated_shareholders": 1
+                                            }
+                                          }
+                                        ],
+                                        "total_shareholders": 2,
+                                        "penetrated_shareholders": 1
+                                      }
+                                    }
+                                  ],
+                                  "total_shareholders": 1,
+                                  "penetrated_shareholders": 1
+                                }
+                              }
+                            ],
+                            "total_shareholders": 2,
+                            "penetrated_shareholders": 1
+                          }
+                        },
+                        {
+                          "shareholder_name": "湖北长江产业投资基金合伙企业（有限合伙）",
+                          "percentage": 14.8936,
+                          "actual_percentage": 0.024425503999999997,
+                          "capital": "70000万元人民币",
+                          "type": "合伙企业",
+                          "gid": 2350127584,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "湖北长江产业投资基金合伙企业（有限合伙）",
+                            "gid": 2350127584,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "长江产业投资集团有限公司",
+                                "percentage": 99.7506,
+                                "actual_percentage": 0.024364586793023998,
+                                "capital": "4000000万元人民币",
+                                "type": "企业法人",
+                                "gid": 530016920,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "长江产业投资集团有限公司",
+                                  "gid": 530016920,
+                                  "depth": 5,
+                                  "shareholders": [
+                                    {
+                                      "shareholder_name": "湖北省人民政府国有资产监督管理委员会",
+                                      "percentage": 100.0,
+                                      "actual_percentage": 0.024364586793023998,
+                                      "capital": "325050万元人民币",
+                                      "type": "机关法人",
+                                      "gid": 511164494,
+                                      "is_company": true,
+                                      "sub_shareholders": []
+                                    }
+                                  ],
+                                  "total_shareholders": 1,
+                                  "penetrated_shareholders": 1
+                                }
+                              }
+                            ],
+                            "total_shareholders": 2,
+                            "penetrated_shareholders": 1
+                          }
+                        },
+                        {
+                          "shareholder_name": "武汉国创创新投资有限公司",
+                          "percentage": 10.6383,
+                          "actual_percentage": 0.017446811999999996,
+                          "capital": "50000万元人民币",
+                          "type": "企业法人",
+                          "gid": 2358217976,
+                          "is_company": true,
+                          "sub_shareholders": {
+                            "company_name": "武汉国创创新投资有限公司",
+                            "gid": 2358217976,
+                            "depth": 4,
+                            "shareholders": [
+                              {
+                                "shareholder_name": "武汉创新投资集团有限公司",
+                                "percentage": 100.0,
+                                "actual_percentage": 0.017446811999999996,
+                                "capital": "140000万元人民币",
+                                "type": "企业法人",
+                                "gid": 2358111995,
+                                "is_company": true,
+                                "sub_shareholders": {
+                                  "company_name": "武汉创新投资集团有限公司",
+                                  "gid": 2358111995,
+                                  "depth": 5,
+                                  "shareholders": [
+                                    {
+                                      "shareholder_name": "武汉国有资本投资运营集团有限公司",
+                                      "percentage": 100.0,
+                                      "actual_percentage": 0.017446811999999996,
+                                      "capital": "30000万元人民币",
+                                      "type": "企业法人",
+                                      "gid": 2977117686,
+                                      "is_company": true,
+                                      "sub_shareholders": {
+                                        "company_name": "武汉国有资本投资运营集团有限公司",
+                                        "gid": 2977117686,
+                                        "depth": 6,
+                                        "shareholders": [],
+                                        "stop_reason": "循环引用"
+                                      }
+                                    }
+                                  ],
+                                  "total_shareholders": 1,
+                                  "penetrated_shareholders": 1
+                                }
+                              }
+                            ],
+                            "total_shareholders": 1,
+                            "penetrated_shareholders": 1
+                          }
+                        }
+                      ],
+                      "total_shareholders": 5,
+                      "penetrated_shareholders": 4
+                    }
+                  },
+                  {
+                    "shareholder_name": "吕强",
+                    "percentage": 0.87,
+                    "actual_percentage": 0.0348,
+                    "capital": "",
+                    "type": "自然人股东",
+                    "gid": 6173069,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "嘉实基金-农业银行-嘉实中证金融资产管理计划",
+                    "percentage": 0.44,
+                    "actual_percentage": 0.0176,
+                    "capital": "",
+                    "type": "企业法人",
+                    "gid": 3402917014,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "嘉实基金-农业银行-嘉实中证金融资产管理计划",
+                      "gid": 3402917014,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "无股东信息"
+                    }
+                  },
+                  {
+                    "shareholder_name": "任文峰",
+                    "percentage": 0.28,
+                    "actual_percentage": 0.011200000000000002,
+                    "capital": "",
+                    "type": "自然人股东",
+                    "gid": 6173069,
+                    "is_company": false,
+                    "sub_shareholders": []
+                  },
+                  {
+                    "shareholder_name": "香港中央结算有限公司",
+                    "percentage": 0.25,
+                    "actual_percentage": 0.01,
+                    "capital": "",
+                    "type": "企业法人",
+                    "gid": 3087057388,
+                    "is_company": true,
+                    "sub_shareholders": []
+                  }
+                ],
+                "total_shareholders": 10,
+                "penetrated_shareholders": 8
+              }
+            },
+            {
+              "shareholder_name": "南通惠天然投资管理有限公司",
+              "percentage": 11.5134,
+              "actual_percentage": 1.1513400000000003,
+              "capital": "1439.18万元人民币",
+              "type": "企业法人",
+              "gid": 2349641366,
+              "is_company": true,
+              "sub_shareholders": {
+                "company_name": "南通惠天然投资管理有限公司",
+                "gid": 2349641366,
+                "depth": 2,
+                "shareholders": [
+                  {
+                    "shareholder_name": "上海任都通投资控股集团有限公司",
+                    "percentage": 100.0,
+                    "actual_percentage": 1.1513400000000003,
+                    "capital": "1000万元人民币",
+                    "type": "企业法人",
+                    "gid": 14662089,
+                    "is_company": true,
+                    "sub_shareholders": {
+                      "company_name": "上海任都通投资控股集团有限公司",
+                      "gid": 14662089,
+                      "depth": 3,
+                      "shareholders": [],
+                      "stop_reason": "循环引用"
+                    }
+                  }
+                ],
+                "total_shareholders": 1,
+                "penetrated_shareholders": 1
+              }
+            }
+          ],
+          "total_shareholders": 3,
+          "penetrated_shareholders": 3
+        }
+      },
+      {
+        "shareholder_name": "叶飞",
+        "percentage": 4.8,
+        "actual_percentage": 4.8,
+        "capital": "30万元人民币",
+        "type": "自然人股东",
+        "gid": 2370153463,
+        "is_company": false,
+        "sub_shareholders": []
+      },
+      {
+        "shareholder_name": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+        "percentage": 2.4,
+        "actual_percentage": 2.4,
+        "capital": "15万元人民币",
+        "type": "合伙企业",
+        "gid": 3392150958,
+        "is_company": true,
+        "sub_shareholders": {
+          "company_name": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "gid": 3392150958,
+          "depth": 1,
+          "shareholders": [
+            {
+              "shareholder_name": "苏郁",
+              "percentage": 6.9124,
+              "actual_percentage": 0.16589759999999998,
+              "capital": "3000万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "慈维琦",
+              "percentage": 2.765,
+              "actual_percentage": 0.06636,
+              "capital": "1200万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "郑晓东",
+              "percentage": 2.3041,
+              "actual_percentage": 0.0552984,
+              "capital": "1000万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "崔岳",
+              "percentage": 1.8433,
+              "actual_percentage": 0.0442392,
+              "capital": "800万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "耿云贵",
+              "percentage": 1.8433,
+              "actual_percentage": 0.0442392,
+              "capital": "800万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "李树文",
+              "percentage": 1.6129,
+              "actual_percentage": 0.0387096,
+              "capital": "700万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "殷绍宇",
+              "percentage": 1.6129,
+              "actual_percentage": 0.0387096,
+              "capital": "700万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "马锐",
+              "percentage": 1.3825,
+              "actual_percentage": 0.03318,
+              "capital": "600万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "孟庆涛",
+              "percentage": 1.1521,
+              "actual_percentage": 0.027650399999999995,
+              "capital": "500万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "张熙",
+              "percentage": 1.1521,
+              "actual_percentage": 0.027650399999999995,
+              "capital": "500万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "曹建军",
+              "percentage": 1.1521,
+              "actual_percentage": 0.027650399999999995,
+              "capital": "500万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            },
+            {
+              "shareholder_name": "魏梅娟",
+              "percentage": 1.1521,
+              "actual_percentage": 0.027650399999999995,
+              "capital": "500万元人民币",
+              "type": "自然人股东",
+              "gid": 3392150958,
+              "is_company": false,
+              "sub_shareholders": []
+            }
+          ],
+          "total_shareholders": 15,
+          "penetrated_shareholders": 12
+        }
+      },
+      {
+        "shareholder_name": "朱鹏辉",
+        "percentage": 0.8,
+        "actual_percentage": 0.8,
+        "capital": "5万元人民币",
+        "type": "自然人股东",
+        "gid": 2370153463,
+        "is_company": false,
+        "sub_shareholders": []
+      }
+    ],
+    "total_shareholders": 6,
+    "penetrated_shareholders": 6
+  },
+  "statistics": {
+    "total_levels": 8,
+    "total_shareholders": 53,
+    "company_shareholders": 33,
+    "individual_shareholders": 20,
+    "max_individual_percentage": 72.0,
+    "total_percentage_covered": 100.0
+  },
+  "ultimate_beneficiaries": [
+    {
+      "name": "向建军",
+      "final_percentage": 72.0,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "向建军",
+          "percentage": 72.0
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "叶飞",
+      "final_percentage": 4.8,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "叶飞",
+          "percentage": 4.8
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "胡斌",
+      "final_percentage": 2.4728166000000003,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "大唐电信投资有限公司",
+          "percentage": 10.0
+        },
+        {
+          "company": "大唐电信投资有限公司",
+          "shareholder": "上海任都通投资控股集团有限公司",
+          "percentage": 48.4866
+        },
+        {
+          "company": "上海任都通投资控股集团有限公司",
+          "shareholder": "胡斌",
+          "percentage": 51.0
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "曹卫东",
+      "final_percentage": 1.5030846000000002,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "大唐电信投资有限公司",
+          "percentage": 10.0
+        },
+        {
+          "company": "大唐电信投资有限公司",
+          "shareholder": "上海任都通投资控股集团有限公司",
+          "percentage": 48.4866
+        },
+        {
+          "company": "上海任都通投资控股集团有限公司",
+          "shareholder": "曹卫东",
+          "percentage": 31.0
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "丁小建",
+      "final_percentage": 0.8727588000000002,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "大唐电信投资有限公司",
+          "percentage": 10.0
+        },
+        {
+          "company": "大唐电信投资有限公司",
+          "shareholder": "上海任都通投资控股集团有限公司",
+          "percentage": 48.4866
+        },
+        {
+          "company": "上海任都通投资控股集团有限公司",
+          "shareholder": "丁小建",
+          "percentage": 18.0
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "朱鹏辉",
+      "final_percentage": 0.8,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "朱鹏辉",
+          "percentage": 0.8
+        }
+      ],
+      "path_length": 1
+    },
+    {
+      "name": "苏郁",
+      "final_percentage": 0.16589759999999998,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "苏郁",
+          "percentage": 6.9124
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "慈维琦",
+      "final_percentage": 0.06636,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "慈维琦",
+          "percentage": 2.765
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "郑晓东",
+      "final_percentage": 0.0552984,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "郑晓东",
+          "percentage": 2.3041
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "崔岳",
+      "final_percentage": 0.0442392,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "崔岳",
+          "percentage": 1.8433
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "耿云贵",
+      "final_percentage": 0.0442392,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "耿云贵",
+          "percentage": 1.8433
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "李树文",
+      "final_percentage": 0.0387096,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "李树文",
+          "percentage": 1.6129
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "殷绍宇",
+      "final_percentage": 0.0387096,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "殷绍宇",
+          "percentage": 1.6129
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "吕强",
+      "final_percentage": 0.0348,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "大唐电信投资有限公司",
+          "percentage": 10.0
+        },
+        {
+          "company": "大唐电信投资有限公司",
+          "shareholder": "大唐电信科技股份有限公司",
+          "percentage": 40.0
+        },
+        {
+          "company": "大唐电信科技股份有限公司",
+          "shareholder": "吕强",
+          "percentage": 0.87
+        }
+      ],
+      "path_length": 3
+    },
+    {
+      "name": "马锐",
+      "final_percentage": 0.03318,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "马锐",
+          "percentage": 1.3825
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "孟庆涛",
+      "final_percentage": 0.027650399999999995,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "孟庆涛",
+          "percentage": 1.1521
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "张熙",
+      "final_percentage": 0.027650399999999995,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "张熙",
+          "percentage": 1.1521
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "曹建军",
+      "final_percentage": 0.027650399999999995,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "曹建军",
+          "percentage": 1.1521
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "魏梅娟",
+      "final_percentage": 0.027650399999999995,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "percentage": 2.4
+        },
+        {
+          "company": "桐乡伯乐锐金股权投资合伙企业（有限合伙）",
+          "shareholder": "魏梅娟",
+          "percentage": 1.1521
+        }
+      ],
+      "path_length": 2
+    },
+    {
+      "name": "任文峰",
+      "final_percentage": 0.011200000000000002,
+      "path": [
+        {
+          "company": "成都锐成芯微科技股份有限公司",
+          "shareholder": "大唐电信投资有限公司",
+          "percentage": 10.0
+        },
+        {
+          "company": "大唐电信投资有限公司",
+          "shareholder": "大唐电信科技股份有限公司",
+          "percentage": 40.0
+        },
+        {
+          "company": "大唐电信科技股份有限公司",
+          "shareholder": "任文峰",
+          "percentage": 0.28
+        }
+      ],
+      "path_length": 3
+    }
+  ],
+  "shareholding_paths": [
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 向建军(72.0%)",
+      "final_beneficiary": "向建军",
+      "final_percentage": 72.0,
+      "path_length": 1
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 叶飞(4.8%)",
+      "final_beneficiary": "叶飞",
+      "final_percentage": 4.8,
+      "path_length": 1
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 大唐电信投资有限公司(10.0%) → 上海任都通投资控股集团有限公司(48.4866%) → 胡斌(51.0%)",
+      "final_beneficiary": "胡斌",
+      "final_percentage": 2.4728166000000003,
+      "path_length": 3
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 大唐电信投资有限公司(10.0%) → 上海任都通投资控股集团有限公司(48.4866%) → 曹卫东(31.0%)",
+      "final_beneficiary": "曹卫东",
+      "final_percentage": 1.5030846000000002,
+      "path_length": 3
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 大唐电信投资有限公司(10.0%) → 上海任都通投资控股集团有限公司(48.4866%) → 丁小建(18.0%)",
+      "final_beneficiary": "丁小建",
+      "final_percentage": 0.8727588000000002,
+      "path_length": 3
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 朱鹏辉(0.8%)",
+      "final_beneficiary": "朱鹏辉",
+      "final_percentage": 0.8,
+      "path_length": 1
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 苏郁(6.9124%)",
+      "final_beneficiary": "苏郁",
+      "final_percentage": 0.16589759999999998,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 慈维琦(2.765%)",
+      "final_beneficiary": "慈维琦",
+      "final_percentage": 0.06636,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 郑晓东(2.3041%)",
+      "final_beneficiary": "郑晓东",
+      "final_percentage": 0.0552984,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 崔岳(1.8433%)",
+      "final_beneficiary": "崔岳",
+      "final_percentage": 0.0442392,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 耿云贵(1.8433%)",
+      "final_beneficiary": "耿云贵",
+      "final_percentage": 0.0442392,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 李树文(1.6129%)",
+      "final_beneficiary": "李树文",
+      "final_percentage": 0.0387096,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 殷绍宇(1.6129%)",
+      "final_beneficiary": "殷绍宇",
+      "final_percentage": 0.0387096,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 大唐电信投资有限公司(10.0%) → 大唐电信科技股份有限公司(40.0%) → 吕强(0.87%)",
+      "final_beneficiary": "吕强",
+      "final_percentage": 0.0348,
+      "path_length": 3
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 马锐(1.3825%)",
+      "final_beneficiary": "马锐",
+      "final_percentage": 0.03318,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 孟庆涛(1.1521%)",
+      "final_beneficiary": "孟庆涛",
+      "final_percentage": 0.027650399999999995,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 张熙(1.1521%)",
+      "final_beneficiary": "张熙",
+      "final_percentage": 0.027650399999999995,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 曹建军(1.1521%)",
+      "final_beneficiary": "曹建军",
+      "final_percentage": 0.027650399999999995,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 桐乡伯乐锐金股权投资合伙企业（有限合伙）(2.4%) → 魏梅娟(1.1521%)",
+      "final_beneficiary": "魏梅娟",
+      "final_percentage": 0.027650399999999995,
+      "path_length": 2
+    },
+    {
+      "path": "成都锐成芯微科技股份有限公司 → 大唐电信投资有限公司(10.0%) → 大唐电信科技股份有限公司(40.0%) → 任文峰(0.28%)",
+      "final_beneficiary": "任文峰",
+      "final_percentage": 0.011200000000000002,
+      "path_length": 3
+    }
+  ],
+  "data_source": "天眼查API"
+}
