@@ -87,6 +87,11 @@ class ModernTianyanchaGUI:
 
         # 配置文件路径
         self.config_file = "tianyancha_config.pkl"
+        
+        # 查询历史和候选企业
+        self.query_history = []
+        self.current_query_index = -1
+        self.candidate_companies = []
 
         # 加载保存的配置
         self.load_config()
@@ -243,12 +248,17 @@ class ModernTianyanchaGUI:
                                style='Header.TLabel')
         title_label.pack(side=tk.LEFT)
 
-        subtitle_label = ttk.Label(title_frame,
-                                  text="现代版 - 专业企业数据分析工具",
-                                  font=('Microsoft YaHei', 10),
-                                  foreground='#e2e8f0',
+        # 快捷键提示
+        shortcut_frame = ttk.Frame(header_frame, style='Header.TFrame')
+        shortcut_frame.pack(side=tk.LEFT, padx=(30, 0), pady=15)
+        
+        shortcut_text = "快捷键: Enter搜索 | ↓进入列表 | 双击/Enter查询 | Alt+←返回 | 1-5切换页 | Ctrl+C复制"
+        shortcut_label = ttk.Label(shortcut_frame,
+                                  text=shortcut_text,
+                                  font=('Microsoft YaHei', 9),
+                                  foreground='#cbd5e1',
                                   background=self.colors['primary'])
-        subtitle_label.pack(side=tk.LEFT, padx=(15, 0))
+        shortcut_label.pack()
 
         # 右侧作者信息
         author_frame = ttk.Frame(header_frame, style='Header.TFrame')
@@ -264,7 +274,7 @@ class ModernTianyanchaGUI:
     def create_search_section(self, parent):
         """创建现代化的搜索区域"""
         search_frame = ttk.Frame(parent, style='Modern.TFrame')
-        search_frame.pack(fill=tk.X, pady=(20, 25))
+        search_frame.pack(fill=tk.X, pady=(20, 15))
 
         # 搜索卡片
         search_card = ttk.Frame(search_frame, style='Modern.TFrame', relief='solid', borderwidth=1)
@@ -306,12 +316,19 @@ class ModernTianyanchaGUI:
         button_frame = ttk.Frame(input_container, style='Modern.TFrame')
         button_frame.pack(side=tk.RIGHT)
 
-        # 查询按钮
+        # 搜索按钮
         self.query_btn = ttk.Button(button_frame,
-                                   text="🔍 开始查询",
+                                   text="🔍 搜索企业",
                                    style='Modern.TButton',
-                                   command=self.start_query)
+                                   command=self.search_companies)
         self.query_btn.pack(side=tk.LEFT, padx=(0, 10))
+
+        # 返回按钮
+        self.back_btn = ttk.Button(button_frame,
+                                  text="⬅ 返回",
+                                  style='Secondary.TButton',
+                                  command=self.go_back_query)
+        self.back_btn.pack(side=tk.LEFT, padx=(0, 10))
 
         # 配置按钮
         config_btn = ttk.Button(button_frame,
@@ -319,6 +336,41 @@ class ModernTianyanchaGUI:
                                style='Secondary.TButton',
                                command=self.show_config)
         config_btn.pack(side=tk.LEFT)
+
+        # 候选企业列表区域
+        candidate_frame = ttk.Frame(search_inner, style='Modern.TFrame')
+        candidate_frame.pack(fill=tk.X, pady=(10, 0))
+
+        candidate_label = ttk.Label(candidate_frame,
+                                   text="📋 候选企业列表（双击或按Enter查询详情）",
+                                   style='Modern.TLabel',
+                                   font=('Microsoft YaHei', 10))
+        candidate_label.pack(anchor=tk.W, pady=(0, 5))
+
+        candidate_table_frame = ttk.Frame(candidate_frame, style='Modern.TFrame')
+        candidate_table_frame.pack(fill=tk.X)
+
+        columns = ("序号", "企业名称", "法定代表人", "注册状态", "成立日期")
+        self.candidate_tree = ttk.Treeview(candidate_table_frame,
+                                          columns=columns,
+                                          show="headings",
+                                          height=5,
+                                          selectmode="browse",
+                                          style='Modern.Treeview')
+
+        headers = {"序号": 60, "企业名称": 400, "法定代表人": 120, "注册状态": 100, "成立日期": 120}
+        for col, width in headers.items():
+            self.candidate_tree.heading(col, text=col)
+            self.candidate_tree.column(col, width=width, minwidth=width-20)
+
+        candidate_scrollbar = ttk.Scrollbar(candidate_table_frame, orient=tk.VERTICAL, command=self.candidate_tree.yview)
+        self.candidate_tree.configure(yscrollcommand=candidate_scrollbar.set)
+
+        self.candidate_tree.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        candidate_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+        self.candidate_tree.bind("<Double-Button-1>", self.on_candidate_select)
+        self.candidate_tree.bind("<Return>", self.on_candidate_select)
 
     def create_data_section(self, parent):
         """创建数据展示区域"""
@@ -707,78 +759,100 @@ class ModernTianyanchaGUI:
             self.update_status("已复制整行到剪贴板")
             
     def copy_for_word(self, tree):
-        """复制为Word友好格式（表格格式）"""
+        """复制为Word友好格式（HTML表格格式）"""
         selection = tree.selection()
         if not selection:
             self.update_status("请先选择要复制的行", "orange")
             return
 
         try:
-            copied_data = []
-
-            # 获取列标题和列宽信息
             columns = tree['columns']
-            if columns:
-                headers = []
-                col_widths = []
-                for col in columns:
-                    header_text = tree.heading(col)['text']
-                    headers.append(header_text)
-                    # 估算列宽（中文字符按2个字符宽度计算）
-                    width = max(len(header_text), 8)  # 最小宽度8
-                    col_widths.append(width)
-
-                # 检查数据行，调整列宽
-                for item in selection[:5]:  # 只检查前5行来估算宽度
-                    values = tree.item(item, 'values')
-                    for i, v in enumerate(values):
-                        if i < len(col_widths):
-                            str_v = str(v) if v else '-'
-                            # 计算显示宽度（中文字符宽度x2）
-                            display_width = sum(2 if ord(c) > 127 else 1 for c in str_v)
-                            col_widths[i] = max(col_widths[i], min(display_width, 20))  # 最大宽度20
-
-                # 创建表格分隔线
-                separator = '+' + '+'.join('-' * (w + 2) for w in col_widths) + '+'
-
-                # 添加表格标题
-                copied_data.append(separator)
-                header_row = '|'
-                for i, header in enumerate(headers):
-                    padded_header = f" {header:<{col_widths[i]}} "
-                    header_row += padded_header + '|'
-                copied_data.append(header_row)
-                copied_data.append(separator)
-
-            # 获取选中行的数据，格式化为表格
+            headers = [tree.heading(col)['text'] for col in columns]
+            
+            # 构建HTML表格
+            html = '<table border="1" cellspacing="0" cellpadding="5">\n'
+            html += '<tr>'
+            for header in headers:
+                html += f'<th style="background-color:#2563eb;color:white;font-weight:bold;">{header}</th>'
+            html += '</tr>\n'
+            
             for item in selection:
                 values = tree.item(item, 'values')
-                row = '|'
-                for i, v in enumerate(values):
-                    if i < len(col_widths):
-                        str_v = str(v).strip() if v else '-'
-                        # 处理特殊字符
-                        str_v = str_v.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
-                        # 限制长度
-                        if len(str_v) > col_widths[i]:
-                            str_v = str_v[:col_widths[i]-3] + '...'
-                        padded_value = f" {str_v:<{col_widths[i]}} "
-                        row += padded_value + '|'
-                copied_data.append(row)
-
-            # 添加底部分隔线
-            if columns:
-                copied_data.append(separator)
-
-            if copied_data:
-                clipboard_text = '\n'.join(copied_data)
+                html += '<tr>'
+                for v in values:
+                    cell_value = str(v) if v else '-'
+                    html += f'<td>{cell_value}</td>'
+                html += '</tr>\n'
+            
+            html += '</table>'
+            
+            # 尝试使用HTML剪贴板格式
+            if self._copy_html_to_clipboard(html):
+                self.update_status(f"已复制 {len(selection)} 行数据（HTML表格格式），可直接粘贴到Word", "green")
+            else:
+                # 回退到纯文本格式
+                text_data = ['\t'.join(headers)]
+                for item in selection:
+                    values = tree.item(item, 'values')
+                    text_data.append('\t'.join(str(v) if v else '-' for v in values))
                 self.root.clipboard_clear()
-                self.root.clipboard_append(clipboard_text)
-                data_rows = len(selection)
-                self.update_status(f"已复制 {data_rows} 行数据（Word表格格式），粘贴到Word后选中文本转换为表格", "green")
+                self.root.clipboard_append('\n'.join(text_data))
+                self.update_status(f"已复制 {len(selection)} 行数据（文本格式）", "green")
 
         except Exception as e:
             self.update_status(f"复制失败: {str(e)}", "red")
+
+    def _copy_html_to_clipboard(self, html):
+        """将HTML内容复制到剪贴板（支持Word粘贴）"""
+        try:
+            import win32clipboard
+            
+            # HTML剪贴板格式头
+            html_header = (
+                "Version:0.9\r\n"
+                "StartHTML:{:08d}\r\n"
+                "EndHTML:{:08d}\r\n"
+                "StartFragment:{:08d}\r\n"
+                "EndFragment:{:08d}\r\n"
+            )
+            
+            prefix = "<!DOCTYPE html><html><body><!--StartFragment-->"
+            suffix = "<!--EndFragment--></body></html>"
+            
+            # 计算偏移量
+            header_len = len(html_header.format(0, 0, 0, 0))
+            start_html = header_len
+            start_fragment = start_html + len(prefix)
+            end_fragment = start_fragment + len(html.encode('utf-8'))
+            end_html = end_fragment + len(suffix)
+            
+            # 构建完整的HTML剪贴板数据
+            cf_html = html_header.format(start_html, end_html, start_fragment, end_fragment)
+            cf_html += prefix + html + suffix
+            
+            # 注册HTML格式
+            CF_HTML = win32clipboard.RegisterClipboardFormat("HTML Format")
+            
+            win32clipboard.OpenClipboard()
+            win32clipboard.EmptyClipboard()
+            win32clipboard.SetClipboardData(CF_HTML, cf_html.encode('utf-8'))
+            
+            # 同时设置纯文本格式作为备用
+            text_lines = []
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(html, 'html.parser')
+            for row in soup.find_all('tr'):
+                cells = row.find_all(['th', 'td'])
+                text_lines.append('\t'.join(cell.get_text() for cell in cells))
+            win32clipboard.SetClipboardText('\n'.join(text_lines))
+            
+            win32clipboard.CloseClipboard()
+            return True
+        except ImportError:
+            return False
+        except Exception as e:
+            print(f"HTML剪贴板复制失败: {e}")
+            return False
 
     def copy_for_excel(self, tree):
         """复制为Excel友好格式"""
@@ -830,9 +904,11 @@ class ModernTianyanchaGUI:
         
     def setup_shortcuts(self):
         """设置快捷键"""
-        self.company_entry.bind('<Return>', lambda event: self.start_query())
+        self.company_entry.bind('<Return>', lambda event: self.search_companies())
+        self.company_entry.bind('<Down>', lambda event: self.focus_candidate_list())
         self.root.bind('<F1>', lambda event: self.show_config())
         self.root.bind('<Control-q>', lambda event: self.root.quit())
+        self.root.bind('<Alt-Left>', lambda event: self.go_back_query())
 
         # 数字键1-5快速切换标签页
         self.root.bind('<Key-1>', lambda event: self.switch_to_tab(0))
@@ -841,11 +917,24 @@ class ModernTianyanchaGUI:
         self.root.bind('<Key-4>', lambda event: self.switch_to_tab(3))
         self.root.bind('<Key-5>', lambda event: self.switch_to_tab(4))
 
-        # ESC键退出
-        self.root.bind('<Escape>', lambda event: self.root.quit())
+        # ESC键返回搜索框
+        self.root.bind('<Escape>', lambda event: self.focus_search_entry())
 
         # 为所有Treeview添加Ctrl+A全选功能
         self.root.bind('<Control-a>', lambda event: self.select_all_in_current_tab(event))
+
+    def focus_candidate_list(self):
+        """焦点移到候选列表"""
+        children = self.candidate_tree.get_children()
+        if children:
+            self.candidate_tree.focus_set()
+            self.candidate_tree.selection_set(children[0])
+            self.candidate_tree.focus(children[0])
+
+    def focus_search_entry(self):
+        """焦点移到搜索框"""
+        self.company_entry.focus_set()
+        self.company_entry.select_range(0, tk.END)
 
     def switch_to_tab(self, tab_index):
         """切换到指定标签页"""
@@ -887,7 +976,7 @@ class ModernTianyanchaGUI:
             self.update_status(f"全选失败: {str(e)}", "red")
 
     def ctrl_click_search(self, event, tree, target_column):
-        """Ctrl+点击搜索企业名称"""
+        """Ctrl+点击直接查询企业详情（跳过候选列表）"""
         try:
             # 获取点击的项目
             item = tree.identify_row(event.y)
@@ -915,9 +1004,9 @@ class ModernTianyanchaGUI:
                 self.company_entry.delete(0, tk.END)
                 self.company_entry.insert(0, company_name)
 
-                # 开始搜索
-                self.update_status(f"正在搜索: {company_name}", "blue")
-                self.start_query()
+                # 直接查询，不显示候选列表
+                self.update_status(f"正在查询: {company_name}", "blue")
+                self._direct_query_company(company_name)
             else:
                 self.update_status("未找到有效的企业名称", "orange")
 
@@ -972,7 +1061,12 @@ class ModernTianyanchaGUI:
             self.update_status(f"复制失败: {str(e)}", "red")
 
     def copy_selected_cells(self, event, tree):
-        """Ctrl+C复制选中的行（支持多行选择，格式适合Word/Excel）"""
+        """Ctrl+C复制选中的行（HTML表格格式）"""
+        self.copy_for_word(tree)
+        return "break"  # 阻止默认行为
+        
+    def _copy_selected_cells_old(self, event, tree):
+        """Ctrl+C复制选中的行（支持多行选择，格式适合Word/Excel）- 旧版本备用"""
         try:
             selection = tree.selection()
             if selection:
@@ -1089,6 +1183,173 @@ class ModernTianyanchaGUI:
         else:
             return self.default_cookies
 
+    def search_companies(self):
+        """搜索企业列表（显示候选）"""
+        company_name = self.company_entry.get().strip()
+        if not company_name:
+            messagebox.showwarning("警告", "请输入企业名称")
+            return
+
+        self.query_btn.config(state='disabled')
+        self.update_status("正在搜索...", "blue")
+
+        thread = threading.Thread(target=self._search_companies_thread, args=(company_name,))
+        thread.daemon = True
+        thread.start()
+
+    def _search_companies_thread(self, company_name):
+        """搜索企业线程"""
+        try:
+            cookies = self.get_current_cookies()
+            auth_token = getattr(self, 'current_auth_token', '')
+            api = TianyanchaAPI(cookies, auth_token)
+
+            result = api.search_company_list(company_name)
+            
+            if result:
+                self.candidate_companies = result
+                self.root.after(0, lambda: self._update_candidate_list(result))
+                self.root.after(0, lambda: self.update_status(f"找到 {len(result)} 个候选企业", "green"))
+            else:
+                self.root.after(0, lambda: self.update_status("未找到匹配的企业", "orange"))
+
+        except Exception as e:
+            self.root.after(0, lambda: self.update_status(f"搜索失败: {str(e)}", "red"))
+        finally:
+            self.root.after(0, lambda: self.query_btn.config(state='normal'))
+
+    def _update_candidate_list(self, companies):
+        """更新候选企业列表"""
+        for item in self.candidate_tree.get_children():
+            self.candidate_tree.delete(item)
+
+        for i, company in enumerate(companies, 1):
+            values = (
+                i,
+                company.get('name', ''),
+                company.get('legalPerson', ''),
+                company.get('regStatus', ''),
+                company.get('establishTime', '')
+            )
+            self.candidate_tree.insert("", tk.END, values=values, tags=(str(i-1),))
+
+        if companies:
+            first_item = self.candidate_tree.get_children()[0]
+            self.candidate_tree.selection_set(first_item)
+
+    def on_candidate_select(self, event):
+        """候选企业选择事件"""
+        selection = self.candidate_tree.selection()
+        if not selection:
+            return
+
+        item = selection[0]
+        item_index = self.candidate_tree.index(item)
+        
+        if item_index < len(self.candidate_companies):
+            company = self.candidate_companies[item_index]
+            gid = company.get('gid', '')
+            company_name = company.get('name', '')
+            
+            if gid:
+                # 添加到历史记录
+                self.query_history.append({
+                    'gid': gid,
+                    'name': company_name
+                })
+                self.current_query_index = len(self.query_history) - 1
+                
+                self._query_by_gid(gid, company_name)
+
+    def go_back_query(self):
+        """返回上一个查询"""
+        if self.current_query_index > 0:
+            self.current_query_index -= 1
+            history_item = self.query_history[self.current_query_index]
+            gid = history_item.get('gid', '')
+            company_name = history_item.get('name', '')
+            
+            if gid:
+                self.company_entry.delete(0, tk.END)
+                self.company_entry.insert(0, company_name)
+                self._query_by_gid(gid, company_name)
+                self.update_status(f"返回: {company_name}", "blue")
+        else:
+            self.update_status("已经是第一个查询", "orange")
+
+    def _direct_query_company(self, company_name):
+        """直接查询企业详情（跳过候选列表）"""
+        self.query_btn.config(state='disabled')
+        self.update_status(f"正在查询: {company_name}", "blue")
+        
+        def query_thread():
+            try:
+                cookies = self.get_current_cookies()
+                auth_token = getattr(self, 'current_auth_token', '')
+                api = TianyanchaAPI(cookies, auth_token)
+                
+                # 搜索获取第一个匹配的企业
+                result = api.search_company(company_name)
+                
+                if result:
+                    gid = result.get('gid', '')
+                    name = result.get('name', company_name)
+                    
+                    if gid:
+                        # 添加到历史记录
+                        self.query_history.append({'gid': gid, 'name': name})
+                        self.current_query_index = len(self.query_history) - 1
+                        
+                        # 获取详细信息
+                        basic_info = api.get_basic_info(gid)
+                        shareholders = api.get_shareholders(gid)
+                        personnel = api.get_key_personnel(gid)
+                        financial = api.get_financial_data(gid)
+                        investments = api.get_investment_info(gid)
+                        
+                        self.root.after(0, lambda: self.update_display(basic_info, shareholders, personnel, financial, investments))
+                    else:
+                        self.root.after(0, lambda: self.update_status("未找到企业信息", "orange"))
+                else:
+                    self.root.after(0, lambda: self.update_status("未找到企业信息", "orange"))
+                    
+            except Exception as e:
+                self.root.after(0, lambda: self.update_status(f"查询失败: {str(e)}", "red"))
+            finally:
+                self.root.after(0, lambda: self.query_btn.config(state='normal'))
+        
+        thread = threading.Thread(target=query_thread)
+        thread.daemon = True
+        thread.start()
+
+    def _query_by_gid(self, gid, company_name):
+        """通过gid查询企业详情"""
+        self.query_btn.config(state='disabled')
+        self.update_status(f"正在查询: {company_name}", "blue")
+        
+        def query_thread():
+            try:
+                cookies = self.get_current_cookies()
+                auth_token = getattr(self, 'current_auth_token', '')
+                api = TianyanchaAPI(cookies, auth_token)
+                
+                basic_info = api.get_basic_info(gid)
+                shareholders = api.get_shareholders(gid)
+                personnel = api.get_key_personnel(gid)
+                financial = api.get_financial_data(gid)
+                investments = api.get_investment_info(gid)
+                
+                self.root.after(0, lambda: self.update_display(basic_info, shareholders, personnel, financial, investments))
+                    
+            except Exception as e:
+                self.root.after(0, lambda: self.update_status(f"查询失败: {str(e)}", "red"))
+            finally:
+                self.root.after(0, lambda: self.query_btn.config(state='normal'))
+        
+        thread = threading.Thread(target=query_thread)
+        thread.daemon = True
+        thread.start()
+
     def start_query(self):
         """开始查询"""
         company_name = self.company_entry.get().strip()
@@ -1166,6 +1427,8 @@ class ModernTianyanchaGUI:
         # 更新对外投资
         self.update_investments(investments)
 
+        # 切换到基本信息标签页
+        self.notebook.select(0)
         self.update_status("查询完成", "green")
 
     def update_basic_info(self, basic_info):
@@ -1373,6 +1636,44 @@ class TianyanchaAPI:
         # 如果有auth token，添加到headers中
         if auth_token:
             self.base_headers["x-auth-token"] = auth_token
+
+    def search_company_list(self, company_name):
+        """搜索公司列表，返回多个候选企业"""
+        timestamp = int(time.time() * 1000)
+        url = f"https://capi.tianyancha.com/cloud-tempest/search/suggest/company/main?_={timestamp}"
+        payload = {"keyword": company_name}
+
+        try:
+            response = self.session.post(url, json=payload, headers=self.base_headers, timeout=10)
+            if response.status_code == 200:
+                result = response.json()
+                if result.get('state') == 'ok' and 'data' in result:
+                    data = result['data']
+                    company_list = data.get('companySuggestList', [])
+                    
+                    companies = []
+                    for company in company_list[:10]:
+                        establish_time = company.get('estiblishTime', '')
+                        if establish_time and isinstance(establish_time, (int, float)):
+                            try:
+                                import datetime
+                                establish_time = datetime.datetime.fromtimestamp(establish_time / 1000).strftime('%Y-%m-%d')
+                            except:
+                                establish_time = str(establish_time)
+                        
+                        companies.append({
+                            'gid': str(company.get('id', '')),
+                            'graphId': str(company.get('graphId', '')),
+                            'name': company.get('comName', ''),
+                            'legalPerson': company.get('legalPersonName', ''),
+                            'regStatus': '存续' if company.get('regStatus', 0) == 1 else '其他',
+                            'establishTime': establish_time if establish_time else ''
+                        })
+                    return companies
+            return []
+        except Exception as e:
+            print(f"搜索企业列表失败: {e}")
+            return []
 
     def search_company(self, company_name):
         """搜索公司获取基本信息"""
