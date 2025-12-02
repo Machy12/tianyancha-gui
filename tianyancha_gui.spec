@@ -11,6 +11,7 @@ a = Analysis(
     binaries=[],
     datas=[
         ('tianyancha_treeview.py', '.'),
+        ('app_icon.ico', '.'),
     ],
     hiddenimports=[
         'requests',
@@ -23,8 +24,16 @@ a = Analysis(
         'time',
         'os',
         'ctypes',
+        'ctypes.wintypes',
+        # pywin32相关模块
         'win32clipboard',
         'win32con',
+        'win32api',
+        'win32gui',
+        'pywintypes',
+        'pythoncom',
+        'win32com',
+        'win32com.client',
     ],
     hookspath=[],
     hooksconfig={},

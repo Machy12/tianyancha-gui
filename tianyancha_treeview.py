@@ -807,6 +807,7 @@ class ModernTianyanchaGUI:
         """将HTML内容复制到剪贴板（支持Word粘贴）"""
         try:
             import win32clipboard
+            import win32con
             
             # HTML剪贴板格式头
             html_header = (
@@ -834,25 +835,123 @@ class ModernTianyanchaGUI:
             # 注册HTML格式
             CF_HTML = win32clipboard.RegisterClipboardFormat("HTML Format")
             
-            win32clipboard.OpenClipboard()
-            win32clipboard.EmptyClipboard()
-            win32clipboard.SetClipboardData(CF_HTML, cf_html.encode('utf-8'))
-            
-            # 同时设置纯文本格式作为备用
+            # 准备纯文本备用
             text_lines = []
             from bs4 import BeautifulSoup
             soup = BeautifulSoup(html, 'html.parser')
             for row in soup.find_all('tr'):
                 cells = row.find_all(['th', 'td'])
                 text_lines.append('\t'.join(cell.get_text() for cell in cells))
-            win32clipboard.SetClipboardText('\n'.join(text_lines))
+            plain_text = '\n'.join(text_lines)
+            
+            win32clipboard.OpenClipboard()
+            win32clipboard.EmptyClipboard()
+            
+            # 设置HTML格式
+            win32clipboard.SetClipboardData(CF_HTML, cf_html.encode('utf-8'))
+            
+            # 同时设置纯文本格式作为备用（使用Unicode格式）
+            win32clipboard.SetClipboardData(win32con.CF_UNICODETEXT, plain_text)
             
             win32clipboard.CloseClipboard()
             return True
-        except ImportError:
-            return False
+        except ImportError as e:
+            # win32clipboard导入失败，使用ctypes作为备用方案
+            return self._copy_html_to_clipboard_ctypes(html)
         except Exception as e:
+            try:
+                win32clipboard.CloseClipboard()
+            except:
+                pass
             print(f"HTML剪贴板复制失败: {e}")
+            return self._copy_html_to_clipboard_ctypes(html)
+    
+    def _copy_html_to_clipboard_ctypes(self, html):
+        """使用ctypes作为备用方案复制HTML到剪贴板"""
+        try:
+            import ctypes
+            from ctypes import wintypes
+            
+            # Windows API
+            user32 = ctypes.windll.user32
+            kernel32 = ctypes.windll.kernel32
+            
+            # 常量
+            CF_UNICODETEXT = 13
+            GMEM_MOVEABLE = 0x0002
+            
+            # HTML剪贴板格式头
+            html_header = (
+                "Version:0.9\r\n"
+                "StartHTML:{:08d}\r\n"
+                "EndHTML:{:08d}\r\n"
+                "StartFragment:{:08d}\r\n"
+                "EndFragment:{:08d}\r\n"
+            )
+            
+            prefix = "<!DOCTYPE html><html><body><!--StartFragment-->"
+            suffix = "<!--EndFragment--></body></html>"
+            
+            # 计算偏移量
+            header_len = len(html_header.format(0, 0, 0, 0))
+            start_html = header_len
+            start_fragment = start_html + len(prefix)
+            end_fragment = start_fragment + len(html.encode('utf-8'))
+            end_html = end_fragment + len(suffix)
+            
+            # 构建完整的HTML剪贴板数据
+            cf_html = html_header.format(start_html, end_html, start_fragment, end_fragment)
+            cf_html += prefix + html + suffix
+            cf_html_bytes = cf_html.encode('utf-8')
+            
+            # 注册HTML格式
+            CF_HTML = user32.RegisterClipboardFormatW("HTML Format")
+            
+            # 准备纯文本
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(html, 'html.parser')
+            text_lines = []
+            for row in soup.find_all('tr'):
+                cells = row.find_all(['th', 'td'])
+                text_lines.append('\t'.join(cell.get_text() for cell in cells))
+            plain_text = '\n'.join(text_lines)
+            
+            # 打开剪贴板
+            if not user32.OpenClipboard(None):
+                return False
+            
+            user32.EmptyClipboard()
+            
+            # 设置HTML格式
+            html_size = len(cf_html_bytes) + 1
+            h_html = kernel32.GlobalAlloc(GMEM_MOVEABLE, html_size)
+            if h_html:
+                p_html = kernel32.GlobalLock(h_html)
+                if p_html:
+                    ctypes.memmove(p_html, cf_html_bytes, len(cf_html_bytes))
+                    kernel32.GlobalUnlock(h_html)
+                    user32.SetClipboardData(CF_HTML, h_html)
+            
+            # 设置纯文本格式
+            text_bytes = (plain_text + '\0').encode('utf-16-le')
+            text_size = len(text_bytes)
+            h_text = kernel32.GlobalAlloc(GMEM_MOVEABLE, text_size)
+            if h_text:
+                p_text = kernel32.GlobalLock(h_text)
+                if p_text:
+                    ctypes.memmove(p_text, text_bytes, text_size)
+                    kernel32.GlobalUnlock(h_text)
+                    user32.SetClipboardData(CF_UNICODETEXT, h_text)
+            
+            user32.CloseClipboard()
+            return True
+            
+        except Exception as e:
+            print(f"ctypes剪贴板复制失败: {e}")
+            try:
+                ctypes.windll.user32.CloseClipboard()
+            except:
+                pass
             return False
 
     def copy_for_excel(self, tree):
