@@ -77,7 +77,7 @@ class ModernTianyanchaGUI:
         self.setup_modern_style()
 
         # 默认cookies - 更新为有效的cookies
-        self.default_cookies = "CUID=fb5e88e52fd728716c8198eb6ba8ea2a; jsid=SEO-BING-ALL-SY-000001; TYCID=0abfc5307ad811f09f5f8b4d203646f6; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22237696749%22%2C%22first_id%22%3A%22198b4605021139-066397364a4e854-26011051-1395396-198b4605022465%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTk4YjQ2MDUwMjExMzktMDY2Mzk3MzY0YTRlODU0LTI2MDExMDUxLTEzOTUzOTYtMTk4YjQ2MDUwMjI0NjUiLCIkaWRlbnRpdHlfbG9naW5faWQiOiIyMzc2OTY3NDkifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22237696749%22%7D%2C%22%24device_id%22%3A%22198b4605021139-066397364a4e854-26011051-1395396-198b4605022465%22%7D; tyc-user-info=%7B%22state%22%3A%220%22%2C%22vipManager%22%3A%220%22%2C%22mobile%22%3A%2215904922578%22%2C%22userId%22%3A%22237696749%22%7D; tyc-user-info-save-time=1756966779039; auth_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkwNDkyMjU3OCIsImlhdCI6MTc1Njk2Njc4MywiZXhwIjoxNzU5NTU4NzgzfQ.y0E08y-FkpMHgxVcdF3W0EQG3UQhZpW49DAScvqlgmhwVUgc8BSCQybsWEQ3OpCH1WpLzEp54zoRkjWLiYIYBw; ssuid=7644527464; bannerFlag=true; HWWAFSESID=42b601301cf9cc76a7a; HWWAFSESTIME=1757594260820; csrfToken=Axgtjv95gX1OwqzJf4s7gLbX"
+        self.default_cookies = "HWWAFSESTIME=1764670329747; HWWAFSESID=f86ba7f78c4c03b5f9; csrfToken=uKeDfJ6iE6MkUk5fqe_0TK7r; CUID=51490dd745eb2a7ec61f0b23961948f5; TYCID=5d153f20cf6711f09e86857e75bebaa1; sajssdk_2015_cross_new_user=1; Hm_lvt_e92c8d65d92d534b0fc290df538b4758=1764670332; HMACCOUNT=C35DCD4C007E8188; bannerFlag=true; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22237696749%22%2C%22first_id%22%3A%2219ade8c5cf812da-07099f37f9d1c94-26061b51-1327968-19ade8c5cf924ed%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTlhZGU4YzVjZjgxMmRhLTA3MDk5ZjM3ZjlkMWM5NC0yNjA2MWI1MS0xMzI3OTY4LTE5YWRlOGM1Y2Y5MjRlZCIsIiRpZGVudGl0eV9sb2dpbl9pZCI6IjIzNzY5Njc0OSJ9%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22237696749%22%7D%2C%22%24device_id%22%3A%2219ade8c5cf812da-07099f37f9d1c94-26061b51-1327968-19ade8c5cf924ed%22%7D; tyc-user-info=%7B%22state%22%3A%220%22%2C%22vipManager%22%3A%220%22%2C%22mobile%22%3A%2215904922578%22%2C%22userId%22%3A%22237696749%22%7D; tyc-user-info-save-time=1764670363940; auth_token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkwNDkyMjU3OCIsImlhdCI6MTc2NDY3MDM2MiwiZXhwIjoxNzY3MjYyMzYyfQ.zPYTuGVY9QHWC0qyjPH_1yInvTU1ofIXra6Bwjh64-20hPSJ-hqPXyaR3AXWjFm0WRZEgPAHxyiyrB-vcmK9xQ; Hm_lpvt_e92c8d65d92d534b0fc290df538b4758=1764670372"
 
         # 存储查询结果
         self.current_company_data = {}
@@ -98,7 +98,7 @@ class ModernTianyanchaGUI:
 
         # 如果没有保存的配置，使用默认值
         if not hasattr(self, 'current_auth_token') or not self.current_auth_token:
-            self.current_auth_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkwNDkyMjU3OCIsImlhdCI6MTc1NTM3NTI1MSwiZXhwIjoxNzU3OTY3MjUxfQ.1zIzw4KvTX6t1MovGzUrigh7pnZaEc708q1jyHOpGzLNfFiHl86P5DP0qxx5SJIC6qMHBRBo4ZG6Q-StF0BFoA"
+            self.current_auth_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkwNDkyMjU3OCIsImlhdCI6MTc2NDY3MDM2MiwiZXhwIjoxNzY3MjYyMzYyfQ.zPYTuGVY9QHWC0qyjPH_1yInvTU1ofIXra6Bwjh64-20hPSJ-hqPXyaR3AXWjFm0WRZEgPAHxyiyrB-vcmK9xQ"
 
         self.setup_ui()
         self.setup_shortcuts()
@@ -1759,11 +1759,6 @@ class TianyanchaAPI:
             print(f"📡 HTTP状态码: {response.status_code}")
 
             if response.status_code == 200:
-                # 检查是否被重定向到登录页面
-                if '请输入公司名称' in response.text or 'login' in response.url or '登录' in response.text[:1000]:
-                    print("❌ Cookies已过期，需要重新登录获取新的Cookies")
-                    return {'错误': 'Cookies已过期，请在配置中更新Cookies'}
-                
                 # 保存HTML文件用于调试
                 html_filename = f"debug_company_{gid}.html"
                 with open(html_filename, 'w', encoding='utf-8') as f:
