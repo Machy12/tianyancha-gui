@@ -1015,15 +1015,25 @@ class ModernTianyanchaGUI:
 
     def load_config(self):
         """加载保存的配置"""
+        # 保存默认cookies，以防加载的配置为空
+        original_cookies = self.default_cookies
         try:
             if os.path.exists(self.config_file):
                 with open(self.config_file, 'rb') as f:
                     config = pickle.load(f)
-                    self.default_cookies = config.get('cookies', self.default_cookies)
+                    loaded_cookies = config.get('cookies', '')
+                    # 只有加载的cookies非空时才使用
+                    if loaded_cookies and len(loaded_cookies) > 50:
+                        self.default_cookies = loaded_cookies
                     self.current_auth_token = config.get('auth_token', '')
                     print(f"已加载配置文件: {self.config_file}")
         except Exception as e:
             print(f"加载配置失败: {str(e)}")
+        
+        # 确保cookies不为空
+        if not self.default_cookies or len(self.default_cookies) < 50:
+            self.default_cookies = original_cookies
+            print("使用默认cookies")
 
     def save_config_to_file(self):
         """保存配置到文件"""
