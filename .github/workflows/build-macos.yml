@@ -1,0 +1,68 @@
+name: Build macOS DMG
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 lxml pyinstaller pyperclip
+    
+    - name: Patch code for macOS compatibility
+      run: |
+        # 修复 DPI 适配代码（macOS 不需要）
+        sed -i '' 's/ctypes.windll.shcore.SetProcessDpiAwareness(2)/pass  # Windows only/' tianyancha_treeview.py
+        sed -i '' 's/ctypes.windll.user32.SetProcessDPIAware()/pass  # Windows only/' tianyancha_treeview.py
+        
+        # 修复窗口最大化（macOS 用 zoomed 会有问题）
+        sed -i '' "s/self.root.state('zoomed')/self.root.attributes('-zoomed', True) if hasattr(self.root, 'attributes') else None/" tianyancha_treeview.py
+    
+    - name: Build macOS app
+      run: |
+        pyinstaller --onefile --windowed \
+          --name "天眼查企业信息查询工具" \
+          --add-data "tianyancha_treeview.py:." \
+          --hidden-import requests \
+          --hidden-import bs4 \
+          --hidden-import lxml \
+          --hidden-import pyperclip \
+          tianyancha_gui_main.py
+    
+    - name: Create DMG
+      run: |
+        # 创建临时目录
+        mkdir -p dmg_contents
+        cp -r "dist/天眼查企业信息查询工具.app" dmg_contents/
+        
+        # 创建 Applications 快捷方式
+        ln -s /Applications dmg_contents/Applications
+        
+        # 创建 DMG
+        hdiutil create -volname "天眼查企业信息查询工具" \
+          -srcfolder dmg_contents \
+          -ov -format UDZO \
+          "天眼查企业信息查询工具.dmg"
+    
+    - name: Upload DMG artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: macos-dmg
+        path: "天眼查企业信息查询工具.dmg"
+        retention-days: 30
