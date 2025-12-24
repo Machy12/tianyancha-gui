@@ -25,8 +25,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests beautifulsoup4 lxml pyinstaller pyperclip
     
-    - name: Patch code for macOS compatibility
+    - name: Patch code for macOS compatibility and remove sensitive data
       run: |
+        # 清除 cookies 和 auth_token（隐私信息）
+        sed -i '' 's/self.default_cookies = ".*"/self.default_cookies = ""/' tianyancha_treeview.py
+        sed -i '' 's/self.current_auth_token = ".*"/self.current_auth_token = ""/' tianyancha_treeview.py
+        
         # 修复 DPI 适配代码（macOS 不需要）
         sed -i '' 's/ctypes.windll.shcore.SetProcessDpiAwareness(2)/pass  # Windows only/' tianyancha_treeview.py
         sed -i '' 's/ctypes.windll.user32.SetProcessDPIAware()/pass  # Windows only/' tianyancha_treeview.py
